@@ -12,7 +12,7 @@ const config: Config = {
   },
 
   url: 'https://mqole.github.io',
-  baseUrl: '/',
+  baseUrl: '/robust-docs/',
   organizationName: 'mqole',
   projectName: 'robust-docs',
   trailingSlash: false,
@@ -35,6 +35,7 @@ const config: Config = {
       'classic',
       {
         docs: {
+          routeBasePath: '/', // Serve the docs at the site's root
           sidebarPath: './sidebars.ts',
         },
         blog: {
@@ -88,7 +89,7 @@ const config: Config = {
           items: [
             {
               label: 'Documents',
-              to: '/docs/intro',
+              to: '/',
             },
           ],
         },
