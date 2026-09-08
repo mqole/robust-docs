@@ -1,6 +1,8 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 const config: Config = {
   title: 'SS14 Development Docs',
@@ -24,11 +26,39 @@ const config: Config = {
     locales: ['en'],
   },
 
+  // Mermaid:
+
   markdown: {
     mermaid: true,
   },
 
   themes: ['@docusaurus/theme-mermaid'],
+
+  // KaTeX:
+
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css',
+      type: 'text/css',
+      integrity: 'sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+',
+      crossorigin: 'anonymous',
+    },
+  ],
+
+  scripts: [
+    {
+      src: "https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js",
+      integrity: "sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg",
+      crossorigin: "anonymous",
+      defer: true,
+    },
+    {
+      src: "https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js",
+      integrity: "sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk",
+      crossorigin: "anonymous",
+      defer: true,
+    }
+  ],
 
   presets: [
     [
@@ -37,6 +67,8 @@ const config: Config = {
         docs: {
           routeBasePath: '/', // Serve the docs at the site's root
           sidebarPath: './sidebars.ts',
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
         },
         blog: {
           showReadingTime: true,
@@ -69,7 +101,7 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'sidebar',
           position: 'left',
           label: 'Documents',
         },

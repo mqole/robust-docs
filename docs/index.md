@@ -2,6 +2,9 @@
 slug: /
 ---
 
+# The Robust Novella
+*(not to be confused with The Robust Book)*
+
 :::note
 This is an **unofficial** developer's wiki. You may want to instead visit the [official developer's wiki](https://docs.spacestation14.com/index.html).
 
