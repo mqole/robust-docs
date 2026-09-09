@@ -115,7 +115,7 @@ Other functions exist for automatically determining various pronouns based on gr
 Finally, there are functions for conjugating certain special verbs based on gender; these are:
 - `CONJUGATE-BE($ent)` -- (they) are, (he/she/it) is
 - `CONJUGATE-HAVE($ent)` -- (they) have, (he/she/it) has
-- `CONJUGATE-BASIC($ent, first, second)` -- (they) {$first}, (he/she/it) {$second} e.g. `CONJUGATE-BASIC($ent, "run", "runs")` (they run, he/she/it runs)
+- `CONJUGATE-BASIC($ent, first, second)` -- (they) `{$first}`, (he/she/it) `{$second}` e.g. `CONJUGATE-BASIC($ent, "run", "runs")` (they run, he/she/it runs)
 
 These functions add up to create some complicated FTL strings, but they're going to read perfectly every time no matter which entity is being used.
 

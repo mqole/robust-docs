@@ -19,8 +19,8 @@ If you would like to make contributions to this documentation site, it's hosted 
 
 ## Getting Started
 
-- [:question: How do I code?]
-- [:package: Setting up the Dev Environment]
-- [:page_with_curl: Core Game Design]
-- [:world_map: Mapping]
-- [:chart_with_upwards_trend: Git for the SS14 Developer]
+- [:question: How do I code?](./general-development/setup/howdoicode.md)
+- [:package: Setting up the Dev Environment](./general-development/setup/setting-up-a-development-environment.md)
+- [:page_with_curl: Core Game Design](./space-station-14/core-design.md)
+- [:world_map: Mapping](./space-station-14/mapping.md)
+- [:chart_with_upwards_trend: Git for the SS14 Developer](./general-development/setup/git-for-the-ss14-developer.md)
