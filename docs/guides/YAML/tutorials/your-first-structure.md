@@ -14,7 +14,7 @@ Once again this is the first step. First make yourself a new `.rsi`
 
 `Resources/Textures/_OurFork/Structures/Tutorial/mystructure.rsi`
 
-Most of this is the same as it was in [Your first item](../your-first-item) so I won't go as into detail. Drop your sprite and JSON into this folder
+Most of this is the same as it was in [Your first item](your-first-item) so I won't go as into detail. Drop your sprite and JSON into this folder
 
 ```jsonld showLineNumbers=1
 {
@@ -35,7 +35,7 @@ Most of this is the same as it was in [Your first item](../your-first-item) so I
 -----
 ### The YML Code
 
-So let's use what we learned in [Your first item](../your-first-item) to get the YML all set up. Generally all of the base steps are the same, the only real different will be what our `parent` is, which in this case will be `BaseStructure`.
+So let's use what we learned in [Your first item](your-first-item) to get the YML all set up. Generally all of the base steps are the same, the only real different will be what our `parent` is, which in this case will be `BaseStructure`.
 
 ```yaml showLineNumbers=1
 - type: entity
