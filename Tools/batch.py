@@ -46,7 +46,7 @@ for file in allFiles:
     # Check for <p> block.
     p = remove_p.has_p(stringFile)
     if p > 0:
-        print (str(p) + " <p> blocks found.")
+        print (str(p) + " <p> or <br> blocks found.")
         stringFile = remove_p.remove_p(stringFile)
 
     # Check for <details><summary> with no newline.

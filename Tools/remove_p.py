@@ -1,6 +1,6 @@
 import re
 
-pattern = r"</*p/*>"
+pattern = r"</*p/*>|</*br/*>"
 
 def has_p(stringFile: str):
     n = re.findall(pattern, stringFile)
