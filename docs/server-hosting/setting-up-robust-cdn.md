@@ -580,7 +580,7 @@ This require authentication.
 
 ### POST & OPTIONS `/fork/{fork}/version/{version}/download`
 
-Client CDN download endpoint for a version. See [Delta Updates](../other-projects/launcher/delta-updates-and-manifests.md) for details.
+Client CDN download endpoint for a version. See [Delta Updates](https://docs.spacestation14.com/en/other-projects/launcher/delta-updates-and-manifests.html) for details.
 
 ### GET `/fork/{fork}/version/{version}/file/{file}`
 
@@ -588,7 +588,7 @@ Downloads a server or client build zip from a version. File is the file name.
 
 ### GET `/fork/{fork}/version/{version}/manifest`
 
-Client CDN manifest endpoint for a version. See [Delta Updates](../other-projects/launcher/delta-updates-and-manifests.md) for details.
+Client CDN manifest endpoint for a version. See [Delta Updates](https://docs.spacestation14.com/en/other-projects/launcher/delta-updates-and-manifests.html) for details.
 
 ### POST & OPTIONS `/version/{version}/download`
 

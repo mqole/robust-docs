@@ -1,5 +1,5 @@
 # Setting up SS14.Admin
-[SS14.Admin](https://github.com/space-wizards/SS14.Admin/) is a web-based panel for administration of SS14 servers, providing various [features](../community/admin/admin-tooling.md#ss14admin) critical for serious servers.
+[SS14.Admin](https://github.com/space-wizards/SS14.Admin/) is a web-based panel for administration of SS14 servers, providing various [features](https://docs.spacestation14.com/en/community/admin/admin-tooling.html#ss14admin) critical for serious servers.
 
 This document will explain what you will need to set yourself up with your own instance of SS14.Admin.
 

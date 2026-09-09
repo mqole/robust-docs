@@ -131,7 +131,7 @@ By default, the server ships with no rules. To set custom rules for your own ser
 
 ### Public Hub Server - Getting your server on the launcher's list
 
-1. Read  the [hub server rules](https://docs.spacestation14.com/en/community/space-wizards-hub-rules.md) before putting your server on the hub. Advertising to the hub constitutes acceptance of the hub rules.
+1. Read  the [hub server rules](https://docs.spacestation14.com/en/community/space-wizards-hub-rules.html) before putting your server on the hub. Advertising to the hub constitutes acceptance of the hub rules.
 
 2. Pick tags for your server based on the [standard tags](../../robust-toolbox/server-http-api.md#standard-tags).
 
@@ -260,7 +260,7 @@ The game server automatically does migrations when it starts up, you do not have
 
 ### Prometheus Metrics
 
-SS14 supports hosting a metrics server that [Prometheus](https://prometheus.io/) can scrape, with which you can then make fancy graphs in [Grafana](https://grafana.com/) or such. You can find our Grafana dashboards [here](https://docs.spacestation14.com/en/community/infrastructure-reference/grafana-dashboards.md), in case they happen to be useful.
+SS14 supports hosting a metrics server that [Prometheus](https://prometheus.io/) can scrape, with which you can then make fancy graphs in [Grafana](https://grafana.com/) or such. You can find our Grafana dashboards [here](https://docs.spacestation14.com/en/community/infrastructure-reference/grafana-dashboards.html), in case they happen to be useful.
 
 To configure this, you can use the following config variables:
 
@@ -416,6 +416,6 @@ All of the important links on this page in one convenient place.
 * [ASP.NET Core 10 Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/10.0) (Also included in full .NET 10 SDK)
 * [SS14.Watchdog](https://github.com/space-wizards/SS14.Watchdog/)
 * [Official Builds](https://central.spacestation14.io/builds/wizards/builds.html)
-* [Wizard's Den Infrastructure Reference](https://docs.spacestation14.com/en/community/infrastructure-reference/wizards-den-infrastructure.md) (server specs)
-* [Public Hub Server Rules](https://docs.spacestation14.com/en/community/space-wizards-hub-rules.md)
+* [Wizard's Den Infrastructure Reference](https://docs.spacestation14.com/en/community/infrastructure-reference/wizards-den-infrastructure.html) (server specs)
+* [Public Hub Server Rules](https://docs.spacestation14.com/en/community/space-wizards-hub-rules.html)
 * [Port Forwarding](../../server-hosting/port-forwarding.md)
