@@ -1,8 +1,6 @@
 ---
 sidebar_position: 3
 ---
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 # Git for the SS14 Developer
 
@@ -82,60 +80,64 @@ For every step, there will be screenshots and instructions for Git Bash, SmartGi
 
 Navigate to somewhere on your computer where you want to put the local repository, and:
 
-<Tabs>
-<TabItem value ="TortoiseGit">
-<p>
+<details>
+<summary>TortoiseGit</summary>
+
 
 Right click to see TortoiseGit's context menu stuff:
 
 ![tgcm.png](/img/general-development/setup/git-for-the-ss14-developer/tgcm.png)
 
-</p>
-</TabItem>
-<TabItem value ="SmartGit">
-<p>
+</details>
+
+<details>
+<summary>SmartGit</summary>
+
 
 Open up SmartGit and navigate to the desired location, then:
 
 ![sgclone.png](/img/general-development/setup/git-for-the-ss14-developer/sgclone.png)
 
-</p>
-</TabItem>
-<TabItem value ="Git Bash">
-<p>
+</details>
+
+<details>
+<summary>Git Bash</summary>
+
 
 Right click:
 
 ![gbclone.png](/img/general-development/setup/git-for-the-ss14-developer/gbclone.png)
 
-</p>
-</TabItem>
-</Tabs>
+</details>
 
 <hr/>
 
 Then, we'll enter the command for cloning **our** remote repository--not the `space-wizards/space-station-14` repository.
 
-<Tabs>
-<TabItem value ="TortoiseGit">
-<p>
+<details>
+<summary>TortoiseGit</summary>
+
 
 ![tgclone1.png](/img/general-development/setup/git-for-the-ss14-developer/tgclone1.png)
 ![tgclone2.png](/img/general-development/setup/git-for-the-ss14-developer/tgclone2.png)
 
 
-</p>
-</TabItem>
-<TabItem value ="SmartGit">
-<p>
+
+</details>  
+
+<details>
+<summary>SmartGit</summary>
+
 
 ![sgclone1.png](/img/general-development/setup/git-for-the-ss14-developer/sgclone1.png)
 
 
-</p>
-</TabItem>
-<TabItem value ="Git Bash">
-<p>
+
+</details>
+
+<details>
+<summary>Git Bash</summary>
+
 
 ![gbclone1.png](/img/general-development/setup/git-for-the-ss14-developer/gbclone1.png)
 
@@ -146,9 +148,8 @@ Then **c**hange **d**irectory using:
 
 Every Git command will look something like this--`git` and then a keyword like `add`, `commit`, `pull`, etc.
 
-</p>
-</TabItem>
-</Tabs>
+
+</details>
 
 <hr/>
 
@@ -178,33 +179,36 @@ In this case, the remote automatically added is called`origin` and it points to 
 
 One issue: we don't have a reference to the original `space-wizards/space-station-14` remote repository anywhere! How are we supposed to update our local repository without it? So let's make sure we've navigated inside our local repo's folder, and we'll add a new remote:
 
-<Tabs>
-<TabItem value ="TortoiseGit">
-<p>
+<details>
+<summary>TortoiseGit</summary>
+
 
 ![tgremote1.png](/img/general-development/setup/git-for-the-ss14-developer/tgremote1.png)
 ![tgremote2.png](/img/general-development/setup/git-for-the-ss14-developer/tgremote2.png)
 
 
-</p>
-</TabItem>
-<TabItem value ="SmartGit">
-<p>
+
+</details>
+
+<details>
+<summary>SmartGit</summary>
+
 
 ![sgremote1.png](/img/general-development/setup/git-for-the-ss14-developer/sgremote1.png)
 ![sgremote2.png](/img/general-development/setup/git-for-the-ss14-developer/sgremote2.png)
 
 
-</p>
-</TabItem>
-<TabItem value ="Git Bash">
-<p>
+
+</details>
+
+<details>
+<summary>Git Bash</summary>
+
 
 ![gbremote.png](/img/general-development/setup/git-for-the-ss14-developer/gbremote.png)
 
-</p>
-</TabItem>
-</Tabs>
+
+</details>
 
 <hr/>
 
@@ -273,25 +277,28 @@ Also we'll close your PR if it's from your `master` branch (it can very easily c
 
 Making branches is pretty easy. Let's make a new branch called `funny-feature`:
 
-<Tabs>
-<TabItem value ="TortoiseGit">
-<p>
+<details>
+<summary>TortoiseGit</summary>
+
 
 ![tgbranch1.png](/img/general-development/setup/git-for-the-ss14-developer/tgbranch1.png)
 ![tgbranch2.png](/img/general-development/setup/git-for-the-ss14-developer/tgbranch2.png)
 
-</p>
-</TabItem>
-<TabItem value ="SmartGit">
-<p>
+
+</details>
+
+<details>
+<summary>SmartGit</summary>
+
 
 ![sgbranch1.png](/img/general-development/setup/git-for-the-ss14-developer/sgbranch1.png)
 ![sgbranch2.png](/img/general-development/setup/git-for-the-ss14-developer/sgbranch2.png)
 
-</p>
-</TabItem>
-<TabItem value ="Git Bash">
-<p>
+</details>
+
+<details>
+<summary>Git Bash</summary>
+
 
 ![gbbranch.png](/img/general-development/setup/git-for-the-ss14-developer/gbbranch.png)
 
@@ -299,9 +306,8 @@ You may notice that the bit in parentheses (master) changed to (funny-feature)! 
 
 The `-b` in `git checkout` here means 'checkout this branch, and create it if it doesn't exist.'
 
-</p>
-</TabItem>
-</Tabs>
+
+</details>
 
 <hr/>
 
@@ -311,29 +317,32 @@ Switching between branches is pretty easy: it's called **checking out** a branch
 
 Checking out a branch:
 
-<Tabs>
-<TabItem value ="TortoiseGit">
-<p>
+<details>
+<summary>TortoiseGit</summary>
+
 
 ![tgco.png](/img/general-development/setup/git-for-the-ss14-developer/tgco.png)
 
-</p>
-</TabItem>
-<TabItem value ="SmartGit">
-<p>
+
+</details>
+
+<details>
+<summary>SmartGit</summary>
+
 
 ![sgco.png](/img/general-development/setup/git-for-the-ss14-developer/sgco.png)
 
-</p>
-</TabItem>
-<TabItem value ="Git Bash">
-<p>
+
+</details>
+
+<details>
+<summary>Git Bash</summary>
+
 
 ![gbco.png](/img/general-development/setup/git-for-the-ss14-developer/gbco.png)
 
-</p>
-</TabItem>
-</Tabs>
+
+</details>
 
 <hr/>
 
@@ -347,63 +356,69 @@ As mentioned before, commits always come with a message, which is just a short, 
 
 If you want to see what you've currently changed, and what's in the staging area, it's pretty easy:
 
-<Tabs>
-<TabItem value ="TortoiseGit">
-<p>
+<details>
+<summary>TortoiseGit</summary>
+
 
 ![tgsacc.png](/img/general-development/setup/git-for-the-ss14-developer/tgsacc.png)
 
 TortoiseGit also shows changed files/folders (a red icon in the bottom right) in the Windows Explorer which is really nice and why I have it installed in the first place.
 
-</p>
-</TabItem>
-<TabItem value ="SmartGit">
-<p>
+
+</details>
+
+<details>
+<summary>SmartGit</summary>
+
 
 ![sgsacc.png](/img/general-development/setup/git-for-the-ss14-developer/sgsacc.png)
 
 This is assuming you installed SmartGit with the option that the main window shows diffs and status. If you didn't, I don't really know where it is.
 
-</p>
-</TabItem>
-<TabItem value ="Git Bash">
-<p>
+
+</details>
+
+<details>
+<summary>Git Bash</summary>
+
 
 ![gbsacc.png](/img/general-development/setup/git-for-the-ss14-developer/gbsacc.png)
 
-</p>
-</TabItem>
-</Tabs>
+
+</details>
 
 <hr/>
 
 Now that you've verified that all of these changes look good, we'll add them to the staging area and commit them (some Git GUIs do this in one step)
 
-<Tabs>
-<TabItem value ="TortoiseGit">
-<p>
+<details>
+<summary>TortoiseGit</summary>
+
 
 ![tgstaging1.png](/img/general-development/setup/git-for-the-ss14-developer/tgstaging1.png)
 ![tgstaging2.png](/img/general-development/setup/git-for-the-ss14-developer/tgstaging2.png)
 
-</p>
-</TabItem>
-<TabItem value ="SmartGit">
-<p>
+
+</details>
+
+<details>
+<summary>SmartGit</summary>
+
 
 ![sgstaging1.png](/img/general-development/setup/git-for-the-ss14-developer/tgstaging1.png)
 ![sgstaging2.png](/img/general-development/setup/git-for-the-ss14-developer/sgstaging2.png)
 
-</p>
-</TabItem>
-<TabItem value ="Git Bash">
-<p>
+
+</details>
+
+<details>
+<summary>Git Bash</summary>
+
 
 ![gbstaging.png](/img/general-development/setup/git-for-the-ss14-developer/gbstaging.png)
 
-</p>
-</TabItem>
-</Tabs>
+
+</details>
 
 <hr/>
 
@@ -421,33 +436,36 @@ When pushing changes, we specify the *remote* repository that we're pushing to a
 
 Pushing our branch to our remote repository (origin):
 
-<Tabs>
-<TabItem value ="TortoiseGit">
-<p>
+<details>
+<summary>TortoiseGit</summary>
+
 
 ![tgpushing1.png](/img/general-development/setup/git-for-the-ss14-developer/tgpushing1.png)
 ![tgpushing2.png](/img/general-development/setup/git-for-the-ss14-developer/tgpushing2.png)
 
 Selecting 'push all branches' does what it says on the tin. Can be useful.
 
-</p>
-</TabItem>
-<TabItem value ="SmartGit">
-<p>
+
+</details>
+
+<details>
+<summary>SmartGit</summary>
+
 
 ![sgpushing1.png](/img/general-development/setup/git-for-the-ss14-developer/sgpushing1.png)
 ![sgpushing2.png](/img/general-development/setup/git-for-the-ss14-developer/sgpushing2.png)
 
-</p>
-</TabItem>
-<TabItem value ="Git Bash">
-<p>
+
+</details>
+
+<details>
+<summary>Git Bash</summary>
+
 
 ![gbpushing.png](/img/general-development/setup/git-for-the-ss14-developer/gbpushing.png)
 
-</p>
-</TabItem>
-</Tabs>
+
+</details>
 
 ### 5.2 Making a pull request
 
@@ -474,19 +492,21 @@ When you fetch a remote, it downloads those branches to your local repository an
 
 First, let's fetch from our `upstream` remote. It'll take a little bit to complete.
 
-<Tabs>
-<TabItem value ="TortoiseGit">
-<p>
+<details>
+<summary>TortoiseGit</summary>
+
 
 ![tgsm1.png](/img/general-development/setup/git-for-the-ss14-developer/tgsm1.png)
 ![tgsm2.png](/img/general-development/setup/git-for-the-ss14-developer/tgsm2.png)
 
 Make sure you select `upstream` and not origin!
 
-</p>
-</TabItem>
-<TabItem value ="SmartGit">
-<p>
+
+</details>
+
+<details>
+<summary>SmartGit</summary>
+
 
 ![sgsm1.png](/img/general-development/setup/git-for-the-ss14-developer/sgsm1.png)
 
@@ -496,18 +516,18 @@ If it doesn't and it just fetches from origin, go to the bottom left and do this
 
 ![sgsm2.png](/img/general-development/setup/git-for-the-ss14-developer/sgsm2.png)
 
-</p>
-</TabItem>
-<TabItem value ="Git Bash">
-<p>
+</details>
+
+<details>
+<summary>Git Bash</summary>
+
 
 ![gbsm.png](/img/general-development/setup/git-for-the-ss14-developer/gbsm.png)
 
 Here nothing happened because I just fetched, but it'll take a while.
 
-</p>
-</TabItem>
-</Tabs>
+
+</details>
 
 <hr/>
 
@@ -515,33 +535,35 @@ Now, we'll merge those changes we just downloaded into our `master` branch. You 
 
 Check out the branch you want to merge to. Then,
 
-<Tabs>
-<TabItem value ="TortoiseGit">
-<p>
+<details>
+<summary>TortoiseGit</summary>
+
 
 ![tgm1.png](/img/general-development/setup/git-for-the-ss14-developer/tgm1.png)
 ![tgm2.png](/img/general-development/setup/git-for-the-ss14-developer/tgm2.png)
 
-</p>
-</TabItem>
-<TabItem value ="SmartGit">
-<p>
+
+</details>
+
+<details>
+<summary>SmartGit</summary>
+
 
 ![sgm1.png](/img/general-development/setup/git-for-the-ss14-developer/sgm1.png)
 ![sgm2.png](/img/general-development/setup/git-for-the-ss14-developer/sgm2.png)
 
-</p>
-</TabItem>
-<TabItem value ="Git Bash">
-<p>
+</details>
+
+<details>
+<summary>Git Bash</summary>
+
 
 ![gbm.png](/img/general-development/setup/git-for-the-ss14-developer/gbm.png)
 
 You can also `git merge upstream/master [branch-to-merge-to]
 
-</p>
-</TabItem>
-</Tabs>
+
+</details>
 
 ### 6.2 Pull method
 
@@ -553,32 +575,35 @@ We'll **pull** from our `upstream` remote (the main SS14 repo) and tell it to me
 
 First, checkout your `master` branch. We covered this earlier. Then,
 
-<Tabs>
-<TabItem value ="TortoiseGit">
-<p>
+<details>
+<summary>TortoiseGit</summary>
+
 
 ![tgpm1.png](/img/general-development/setup/git-for-the-ss14-developer/tgpm1.png)
 ![tgpm2.png](/img/general-development/setup/git-for-the-ss14-developer/tgpm2.png)
 
-</p>
-</TabItem>
-<TabItem value ="SmartGit">
-<p>
+
+</details>
+
+<details>
+<summary>SmartGit</summary>
+
 
 ![sgpm1.png](/img/general-development/setup/git-for-the-ss14-developer/sgpm1.png)
 ![sgpm2.png](/img/general-development/setup/git-for-the-ss14-developer/sgpm2.png)
 ![sgpm3.png](/img/general-development/setup/git-for-the-ss14-developer/sgpm3.png)
 
-</p>
-</TabItem>
-<TabItem value ="Git Bash">
-<p>
+
+</details>
+
+<details>
+<summary>Git Bash</summary>
+
 
 ![gbpm.png](/img/general-development/setup/git-for-the-ss14-developer/gbpm.png)
 
-</p>
-</TabItem>
-</Tabs>
+
+</details>
 
 <hr/>
 

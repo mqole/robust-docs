@@ -1,4 +1,3 @@
-import common
 import re
 
 pattern = r"</*hr/*>"

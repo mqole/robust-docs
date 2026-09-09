@@ -1,0 +1,51 @@
+---
+title: Wrote some batch scripts today
+description: There's gotta ba a better way to do this, but I don't know enough.
+slug: batch-scripts
+authors: [mqole]
+tags: [site]
+hide_table_of_contents: false
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+Trying to convert the syntax of mdbook into something that's nice on [Docusaurus](https://docusaurus.io/) is annoying, so I wrote some basic Python scripts to do it for me.
+
+{/* truncate */}
+
+So far I've got scripts for:
+- [converting admonish blocks](https://github.com/mqole/robust-docs/blob/main/Tools/convert_admonish.py)
+- converting mdbook's [`<details>` dropdowns into tabs](https://github.com/mqole/robust-docs/blob/main/Tools/convert_tabs.py)
+- tidying up all the [horizontal rule blocks](https://github.com/mqole/robust-docs/blob/main/Tools/convert_hr.py)
+- [removing `<p>` blocks](https://github.com/mqole/robust-docs/blob/main/Tools/remove_p.py)
+- and [fixing spacing on `<details`> blocks.](https://github.com/mqole/robust-docs/blob/main/Tools/fix_details.py)
+
+I started writing the tabs script *before* I realised Docusaurus does support the dropdowns natively, but honestly I think the tabs will probably have some nice use cases, so I'm keeping that script in my back pocket. I definitely prefer the visual style more than dropdowns. Here's a little comparison:
+
+<Tabs>
+<TabItem value='Details'>
+<details>
+<summary>This is the summary...</summary>
+
+...and this is the content!
+
+</details>
+</TabItem>
+<TabItem value='Tabs'>
+You're using tabs right now!!!
+</TabItem>
+</Tabs>
+
+<hr/>
+
+^ *(Oh, look, a horizontal rule! How did that get there?)*
+
+Also of note, a Docusaurus page that uses tabs has to be in the `.mdx` format, not `.md`. The file also needs to include the following header imports:
+```
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+```
+
+I did consider writing a script to automatically convert image paths, but I have plans to tidy up the directories for images anyway, so I'm sticking to doing that one manually for the time being.
+
+The scripts I've written use my arch nemesis [Regex](https://regex101.com/), so if by some pure happenstance anyone reading this wants to cannibalize them for parts, please feel free; they're absolutely nothing special.
