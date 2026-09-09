@@ -17,7 +17,7 @@ Go to [Issues in Space Station 14](https://github.com/space-wizards/space-statio
 After you have chosen an issue to fix, follow the steps here to start making and testing code changes on your own copy of the Space Station 14 code: 
 - [Setting up a Development Environment](../setup/setting-up-a-development-environment.md) 
    - This will let you play a local copy of the game so you can see your changes in gameplay.
-- [Git for the SS14 Developer](../setup/git-for-the-ss14-developer.mdx)
+- [Git for the SS14 Developer](../setup/git-for-the-ss14-developer.md)
    - This will let you work on code that you can transfer from your computer to your Github repository and eventually to Space Station 14.
 
 
@@ -26,7 +26,7 @@ After you have chosen an issue to fix, follow the steps here to start making and
 
 :::danger[Make a new branch so you are not working on the master branch!]
 This is important to know so you do not accidentally delete all of your code changes when you update your copy of Space Station 14.
-- [Git for the SS14 Developer](../setup/git-for-the-ss14-developer.mdx#3-setting-up-remotes)
+- [Git for the SS14 Developer](../setup/git-for-the-ss14-developer.md#3-setting-up-remotes)
 :::
 
 **3 Code Locations to know:**
@@ -40,7 +40,7 @@ This is important to know so you do not accidentally delete all of your code cha
 2. **Local Github < -- > Space Station 14 Github**. Do NOT make your own code changes on your master branch.
 - Your master branch needs to be linked to the master branch of Space Station 14.
 - Every time Space Station 14 Github updates its code, your master branch on your Local Github repository will need to update its code as well so it stays in sync.
-3. **Local Github - > Your copy**. Follow [Setting up a Development Environment](../setup/setting-up-a-development-environment.md) & [Git for the SS14 Developer](../setup/git-for-the-ss14-developer.mdx)
+3. **Local Github - > Your copy**. Follow [Setting up a Development Environment](../setup/setting-up-a-development-environment.md) & [Git for the SS14 Developer](../setup/git-for-the-ss14-developer.md)
 4. **Your copy**. Make a new branch from your code editor where you will make code changes.
 5. **Your copy**. Test your changes in gameplay.
 6. **Your copy - > Local Github**. When your code is ready, make a commit to your Github repository from your non-master branch.
@@ -83,7 +83,7 @@ You may need to merge changes if you are trying to change files that got changed
 
 ### I cannot play a local copy of the game because not all of the projects are loading.
 
-Have you completed step 2.3 of [Git for the SS14 Developer](../setup/git-for-the-ss14-developer.mdx#23-submodule-woes)?
+Have you completed step 2.3 of [Git for the SS14 Developer](../setup/git-for-the-ss14-developer.md#23-submodule-woes)?
 
 Make sure you use the command `cd` to navigate to your space-station-14 repository before running `RUN_THIS.py`.
 ![cdcommand.png](/img/general-development/tips/beginner-faq/cdcommand.png)

@@ -14,7 +14,7 @@ sidebar_position: 4
 | .yml, YAML               | YAML Ain't Markup Language. Used to define prototypes.                                                              |
 | .toml, TOML              | Tom's Obvious Minimal Language. Like YAML but for config.                                                           |
 | ECS                      | Entity Component System                                                                                             |
-| IoC                      | [Inversion of Control] (../../robust-toolbox/ioc.md)                                                                 |
+| IoC                      | [Inversion of Control](../../robust-toolbox/ioc.md)                                                                 |
 | .dmi, DMI                | BYOND/SS13's sprite file format. Converted to an RSI for our usage.                                                 |
 | .rsi, RSI                | Robust Station Images. SS14's image "file" format (actually a folder).                                              |
 | PVS                      | Potentially Visible Set. Stops the server from sending out-of-range entities to clients.                            |

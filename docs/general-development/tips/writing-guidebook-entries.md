@@ -6,7 +6,7 @@ sidebar_position: 4
 
 The guidebook is a powerful tool for communicating more obscure in-game information to players without forcing them to travel to an external wiki. Moving forward, most information should be moved from the wiki to the guidebook in some form.
 
-This guide explains how to write a guidebook entry and set it up in game as well as provides helpful tips for creating good quality entries. Afterwards, if you want to learn how to make a pull request for your new entry, check out [Git for the SS14 Developer](../setup/git-for-the-ss14-developer.mdx).
+This guide explains how to write a guidebook entry and set it up in game as well as provides helpful tips for creating good quality entries. Afterwards, if you want to learn how to make a pull request for your new entry, check out [Git for the SS14 Developer](../setup/git-for-the-ss14-developer.md).
 
 Guide entries are made of two parts, the `.xml` file for the contents of the guide itself and the YAML prototype which defines metadata about the guide itself. We will first go over the file which makes up the contents of the guide.
 
@@ -199,7 +199,7 @@ This is simply a unique prototype Id. Just make sure it roughly corresponds to y
 ### name
 This is a the name which appears in the file view sidebar of the guidebook. Importantly, it's a locale string, which is used for translation. It's also the only part of a guide entry that needs to have a locale string. 
 
-You can learn more about localization [here] (../../ss14-by-example/fluent-and-localization.md).
+You can learn more about localization [here](../../ss14-by-example/fluent-and-localization.md).
 
 ### text
 This is just a file path to the entry, starting from the `/Resources/` directory.

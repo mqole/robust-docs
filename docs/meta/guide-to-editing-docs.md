@@ -35,7 +35,7 @@ If you just want to make a basic edit of a page, simply follow these steps:
 
 If you want to locally build the docs, you'll need to download [Node.js](https://nodejs.org/en/download/) version 20.0 or above (which can be checked by running node -v).
 
-`cd` into the root of the directory and run `npm docusaurus start` to build and locally host the documentation at `localhost:3000`.
+`cd` into the root of the directory and run `npm run start` to build and locally host the documentation at `localhost:3000`.
 
 ## Testing changes
 
