@@ -48,5 +48,5 @@ No idea! What design proposals do or do not get in is determined by maintainer a
 :::tip[Design Principles]
 If you want to improve your chances, it's recommended that you read the [SS14 Core Design Documentation] (/src/en/space-station-14/design.md) document to get a high-level overview before you start writing, as it'll provide context for why things are the way they are.
 
-PR'd design documents should also follow the [Decorum Guidelines](./feature-proposals/expected-feature-proposal-decorum.md).
+PR'd design documents should also follow the [Decorum Guidelines](expected-feature-proposal-decorum.md).
 :::
