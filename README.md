@@ -18,5 +18,4 @@ All content on this site is released under the Mozilla Public License v2.0.
 
 ## To Fix
 
-- Keyword highlighting on `GlossaryTerm` (need to swizzle)
 - Searchbar not loading

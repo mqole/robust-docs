@@ -24,5 +24,3 @@ If you would like to make contributions to this documentation site, it's hosted 
 - [:page_with_curl: Core Game Design](./space-station-14/core-design.md)
 - [:world_map: Mapping](./space-station-14/mapping.md)
 - [:chart_with_upwards_trend: Git for the SS14 Developer](./general-development/setup/git-for-the-ss14-developer.md)
-
-Test Term

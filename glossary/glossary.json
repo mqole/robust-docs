@@ -3,8 +3,118 @@
   "description": "Technical terms used in our documentation",
   "terms": [
     {
-      "term": "Test Term",
-      "definition": "My Test Term"
+      "term": "SS14",
+      "definition": "Space Station 14. Remake of Space Station 13 (SS13).",
+      "abbreviation": "Space Station 14"
+    },
+    {
+      "term": "SS13",
+      "definition": "Space Station 13. The original game that Space Station 14 (SS14) is based on.",
+      "abbreviation": "Space Station 13"
+    },
+    {
+      "term": "BYOND",
+      "definition": "The game engine for SS13."
+    },
+    {
+      "term": "Robust Toolbox",
+      "definition": "Custom game engine on which SS14 is built.",
+      "aliases": ["RT", "Engine"]
+    },
+    {
+      "term": "Content",
+      "definition": "The 'game' running on RobustToolbox.",
+      "aliases": ["Content Pack"],
+      "caseSensitive": true
+    },
+    {
+      "term": "CVar",
+      "definition": "Convar/Console Variable. Configurable value that you can change in the config files or through the console.",
+      "aliases": ["CVars", "CCVar", "CCVars"]
+    },
+    {
+      "term": "YAML",
+      "definition": "YAML Ain't Markup Language. Used to define prototypes.",
+      "abbreviation": "YAML Ain't Markup Language",
+      "aliases": ["YML", ".yml"]
+    },
+    {
+      "term": "TOML",
+      "definition": "Tom's Obvious Minimal Language. Like YAML but for config.",
+      "abbreviation": "Tom's Obvious Minimal Language",
+      "aliases": [".toml"]
+    },
+    {
+      "term": "ECS",
+      "definition": "Entity Component System",
+      "abbreviation": "Entity Component System"
+    },
+    {
+      "term": "IoC",
+      "definition": "Inversion of Control",
+      "abbreviation": "Inversion of Control",
+      "documentation": {
+        "path": "docs/robust-toolbox/ioc",
+        "label": "Read more"
+      }
+    },
+    {
+      "term": "DMI",
+      "definition": "BYOND/SS13's sprite file format. Converted to an RSI for our usage.",
+      "aliases": [".dmi"]
+    },
+    {
+      "term": "RSI",
+      "definition": "Robust Station Images. SS14's image 'file' format (actually a folder).",
+      "abbreviation": "Robust Station Image",
+      "aliases": [".rsi"]
+    },
+    {
+      "term": "PVS",
+      "definition": "Potentially Visible Set. Stops the server from sending out-of-range entities to clients.",
+      "abbreviation": "Potentially Visible Set"
+    },
+    {
+      "term": "VSCode",
+      "definition": "Visual Studio Code. Not the same as VS.",
+      "abbreviation": "Visual Studio Code",
+      "aliases": ["VSC"]
+    },
+    {
+      "term": "VS",
+      "definition": "Visual Studio Community 2017/19. Not the same as VSC. The IDE for people who can't get a Rider license.",
+      "abbreviation": "Visual Studio Community"
+    },
+    {
+      "term": "Rider",
+      "definition": "A crossplatform IDE for C#. (Can be obtained for free for non-commercial use).",
+      "aliases": ["JetBrains Rider"],
+      "caseSensitive": true,
+      "references": {
+        "label": "Downloadable here",
+        "url": "https://www.jetbrains.com/rider/"
+      }
+    },
+    {
+      "term": "Watchdog",
+      "definition": "SS14 Server Watchdog. Used for dedicated server logging, updating and general management."
+    },
+    {
+      "term": "Lidgren",
+      "definition": "Networking library."
+    },
+    {
+      "term": "Box2D",
+      "definition": "The basis for SS14's (heavily modified) physics system."
+    },
+    {
+      "term": "Avalonia",
+      "definition": "UI framework used for the launcher."
+    },
+    {
+      "term": "EntityUid",
+      "definition": "Entity Unique Identifier",
+      "abbreviation": "Entity Unique Identifier"
     }
   ]
 }
