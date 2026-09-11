@@ -28,3 +28,12 @@
   --ifm-color-primary-lightest: #FA7680;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.glossaryTermWrapper .glossaryTerm {
+  border-bottom-color: #05c22e;
+}
+
+/* Override tooltip styles */
+.glossaryTermWrapper .tooltip {
+  background: #05c22e;
+}

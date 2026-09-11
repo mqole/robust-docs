@@ -1,0 +1,29 @@
+{
+  "title": "Glossary",
+  "description": "Technical terms used in our documentation",
+  "terms": [
+    {
+      "term": "API",
+      "abbreviation": "Application Programming Interface",
+      "definition": "A set of rules and protocols that allows different software applications to communicate with each other.",
+      "relatedTerms": ["REST", "GraphQL", "Webhook"],
+      "aliases": ["Application Programming Interface"],
+      "caseSensitive": true,
+      "documentation": {
+        "path": "/docs/api",
+        "label": "Read the API guide"
+      },
+      "references": [
+        {
+          "label": "MDN: Web APIs",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API"
+        }
+      ]
+    },
+    {
+      "term": "Webhook",
+      "definition": "An HTTP callback triggered when something happens; a simple event notification via HTTP POST.",
+      "relatedTerms": ["API", "HTTP"]
+    }
+  ]
+}

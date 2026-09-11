@@ -26,43 +26,10 @@ const config: Config = {
     locales: ['en'],
   },
 
-  // Mermaid:
-
-  markdown: {
-    mermaid: true,
-  },
-
-  themes: ['@docusaurus/theme-mermaid'],
-
-  // KaTeX:
-
-  stylesheets: [
-    {
-      href: 'https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css',
-      type: 'text/css',
-      integrity: 'sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+',
-      crossorigin: 'anonymous',
-    },
-  ],
-
-  scripts: [
-    {
-      src: "https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js",
-      integrity: "sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg",
-      crossorigin: "anonymous",
-      defer: true,
-    },
-    {
-      src: "https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js",
-      integrity: "sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk",
-      crossorigin: "anonymous",
-      defer: true,
-    }
-  ],
-
+  
   presets: [
     [
-      'classic',
+      'docusaurus-plugin-glossary/preset', // classic but with glossary support
       {
         docs: {
           routeBasePath: '/', // Serve the docs at the site's root
@@ -84,10 +51,14 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
         },
-      } satisfies Preset.Options,
+        glossary: { // Glossary plugin
+          glossaryPath: 'glossary/glossary.json',
+          routePath: '/glossary',
+        },
+      }
     ],
   ],
-
+  
   themeConfig: {
     image: 'img/logo.png',
     defaultMode: 'dark',
@@ -113,6 +84,7 @@ const config: Config = {
           label: 'GitHub',
           position: 'right',
         },
+        { to: '/glossary', label: 'Glossary', position: 'left' },
       ],
     },
     footer: {
@@ -143,6 +115,45 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
+
+    // Mermaid:
+    
+    markdown: {
+      mermaid: true,
+    },
+    
+    themes: ['@docusaurus/theme-mermaid'],
+    
+    // KaTeX:
+    
+    stylesheets: [
+      {
+        href: 'https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css',
+        type: 'text/css',
+        integrity: 'sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+',
+        crossorigin: 'anonymous',
+      },
+    ],
+    
+    scripts: [
+      {
+        src: "https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js",
+        integrity: "sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg",
+        crossorigin: "anonymous",
+        defer: true,
+      },
+      {
+        src: "https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js",
+        integrity: "sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk",
+        crossorigin: "anonymous",
+        defer: true,
+      }
+    ],
+
+    plugins: [
+      require.resolve('docusaurus-lunr-search') // Lunr search bar
+    ],
+
   } satisfies Preset.ThemeConfig,
 };
 
