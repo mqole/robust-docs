@@ -53,7 +53,7 @@ const config: Config = {
         },
         glossary: { // Glossary plugin
           glossaryPath: 'glossary/glossary.json',
-          routePath: 'robust-docs/glossary',
+          routePath: '/robust-docs/glossary',
         },
       }
     ],
