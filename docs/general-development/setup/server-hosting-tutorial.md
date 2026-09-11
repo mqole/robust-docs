@@ -14,7 +14,7 @@ If you wish to modify your server to add your own content or rules. You will nee
 3. Download the latest **stable** version of the server from [our builds page](https://wizards.cdn.spacestation14.com/fork/wizards) or if you are looking for latest **testing/vulture** builds download from [this page](https://wizards.cdn.spacestation14.com/fork/wizards-testing/) for your operating system. If you are looking for another fork, ask that fork if they have a server builds page. Otherwise refer to the [Custom Code](#level-2-server-with-custom-code) section below.
 4. Extract the downloaded zip to a directory somewhere, you may use any Archive program such as 7Zip, Winrar or even the one built into your operating system.
 5. (Mac and Linux only) Run `chmod +x Robust.Server` [within a terminal inside the folder you extracted the server in.](#running-the-server-on-macos-or-linux) This only needs to be run once and again each time you download a new server update.
-6. Run `run_server.bat` (Windows) or `./Robust.Server` [via terminal on macOS/Linux](#running-the-server-on-macos-or-linux)) and wait until the console windows says "Ready". Do NOT close the console window until you are done playing on your server.
+6. Run `run_server.bat` (Windows) or `./Robust.Server` [via terminal on macOS/Linux](#running-the-server-on-macos-or-linux) and wait until the console windows says "Ready". Do NOT close the console window until you are done playing on your server.
 7. Open your Space Station 14 Launcher and click on ``Direct Connect To Server`` and type in ``localhost`` as an IP address and click connect. You can also add it as a favorite if you click the ``Add Favorite`` button using the same IP address.
 8. (Optional) When there is a new update. Go back to the 2nd step, and copy over the ``data`` folder and ``server_config.toml`` (if you modified it) from your old server files to the new server files if you like to move over the saved data such as characters and playtime from the old server.
 
@@ -146,7 +146,7 @@ By default, the server ships with no rules. To set custom rules for your own ser
     # server_url = "ss14://..."
     tags = "" # comma separated list of tags
     ```
-If you get an error attempting to advertise, please read [the troubleshooting below](#Troubleshooting)
+If you get an error attempting to advertise, please read [the troubleshooting below](#troubleshooting)
 
 ### Bare Server Build Configuration
 

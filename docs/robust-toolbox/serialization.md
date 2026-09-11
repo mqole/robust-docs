@@ -52,7 +52,7 @@ Here, composition is pushed across nodes using definitions associated to the typ
 ## Data Definitions
 DataDefinitions are Structs or Classes with Field/Properties annotated to be DataFields. These DataFields are written and read to and from yaml, but are also used for copy, validation & composition operations. Going forward, i will simply refer to structs & classes as a "type".
 
-Data definitions must have a parameterless constructor in order to be valid. (With the exception of [DataRecords](#dataRecords))
+Data definitions must have a parameterless constructor in order to be valid. (With the exception of [DataRecords](#datarecords))
 
 ### Declaring a DataDefinition
 :::note

@@ -79,7 +79,7 @@ In this folder, make a file called `tutorial_items.yml`
 All of them are also done in all lowercase.
 :::
 
-In this file is where we are going to be placing our item's code. First let's start with a similar outline to what was laid out in [What's an Entity?](#What's-an-Entity?)
+In this file is where we are going to be placing our item's code. First let's start with a similar outline to what was laid out in [What's an Entity?](../introduction/whats-an-entity.md)
 
 ```yaml  showLineNumbers=1  
 - type: entity

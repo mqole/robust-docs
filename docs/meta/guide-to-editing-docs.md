@@ -53,6 +53,8 @@ If you want to locally build the docs, you'll need to download [Node.js](https:/
 
 To build, `cd` into the root of the directory and run `npm run start` to locally host the documentation at `localhost:3000`. You should now be able to visit this URL in a web browser for a live preview of your changes!
 
+You can also use the commands `npm run build` and `npm run serve` to build your docs locally. The advantage of building before using `npm start` is that you'll be notified if the site can't build for whatever reason. For example, if you have broken links on some of your pages, Docusaurus will let you know!
+
 The easiest way to preview markdown outside of building the entire site is to use a local markdown previewer extension for something like [VSCode](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced). If you've made a PR to GitHub, you can also preview your markdown files in the PR's `Files Changed` tab. There are also plenty of web-based markdown editors- don't be afraid to have a google!
 
 ## Making a Pull Request

@@ -61,7 +61,7 @@ More detailed JSON server information that is mostly necessary when connecting t
 }
 ```
 
-For details about build information, see [Advanced Server Build Configuration](../general-development/setup/setting-up-a-development-environment.md#server-build-configuration).
+For details about build information, see [Advanced Server Build Configuration](../general-development/setup/server-hosting-tutorial.md#server-build-configuration).
 
 Content can also edit this at will.
 

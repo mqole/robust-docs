@@ -235,7 +235,7 @@ And voila! You have robustly set up your development environment in a way that d
 
 # Troubleshooting
 
-Make sure [the first three items](#setting-up-a-development-environment) on top are downloaded.
+Make sure you've downloaded [Git](https://git-scm.com/), [Python 3.7 or higher](https://www.python.org/) and [.NET 10.0 SDK](https://dotnet.microsoft.com/download/dotnet/10.0).
 
 ## `RUN_THIS.py` not running
 Check that python is installed from the website and not the Microsoft Store. If it's installed from the Microsoft Store, uninstall it then download and install from the python website.
