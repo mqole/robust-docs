@@ -19,7 +19,8 @@
     {
       "term": "Robust Toolbox",
       "definition": "Custom game engine on which SS14 is built.",
-      "aliases": ["RT", "Engine"]
+      "aliases": ["RT", "Engine"],
+      "caseSensitive": true
     },
     {
       "term": "Content",
@@ -47,12 +48,14 @@
     {
       "term": "ECS",
       "definition": "Entity Component System",
-      "abbreviation": "Entity Component System"
+      "abbreviation": "Entity Component System",
+      "caseSensitive": true
     },
     {
       "term": "IoC",
       "definition": "Inversion of Control",
       "abbreviation": "Inversion of Control",
+      "caseSensitive": true,
       "documentation": {
         "path": "docs/robust-toolbox/ioc",
         "label": "Read more"
@@ -61,29 +64,34 @@
     {
       "term": "DMI",
       "definition": "BYOND/SS13's sprite file format. Converted to an RSI for our usage.",
-      "aliases": [".dmi"]
+      "aliases": [".dmi"],
+      "caseSensitive": true
     },
     {
       "term": "RSI",
       "definition": "Robust Station Images. SS14's image 'file' format (actually a folder).",
       "abbreviation": "Robust Station Image",
-      "aliases": [".rsi"]
+      "aliases": [".rsi"],
+      "caseSensitive": true
     },
     {
       "term": "PVS",
       "definition": "Potentially Visible Set. Stops the server from sending out-of-range entities to clients.",
-      "abbreviation": "Potentially Visible Set"
+      "abbreviation": "Potentially Visible Set",
+      "caseSensitive": true
     },
     {
       "term": "VSCode",
       "definition": "Visual Studio Code. Not the same as VS.",
       "abbreviation": "Visual Studio Code",
-      "aliases": ["VSC"]
+      "aliases": ["VSC"],
+      "caseSensitive": true
     },
     {
       "term": "VS",
       "definition": "Visual Studio Community 2017/19. Not the same as VSC. The IDE for people who can't get a Rider license.",
-      "abbreviation": "Visual Studio Community"
+      "abbreviation": "Visual Studio Community",
+      "caseSensitive": true
     },
     {
       "term": "Rider",
