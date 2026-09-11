@@ -151,7 +151,7 @@ const config: Config = {
     ],
 
     plugins: [
-      require.resolve('docusaurus-lunr-search') // Lunr search bar
+      ['docusaurus-lunr-search'] // Lunr search bar. NOTE: does not load in localhost.
     ],
 
   } satisfies Preset.ThemeConfig,
