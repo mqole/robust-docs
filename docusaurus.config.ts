@@ -67,6 +67,7 @@ const config: Config = {
         docs: {
           routeBasePath: '/', // Serve the docs at the site's root
           sidebarPath: './sidebars.ts',
+          editUrl: 'https://github.com/mqole/robust-docs/tree/main/',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
         },
@@ -89,6 +90,7 @@ const config: Config = {
 
   themeConfig: {
     image: 'img/logo.png',
+    defaultMode: 'dark',
     colorMode: {
       respectPrefersColorScheme: true,
     },

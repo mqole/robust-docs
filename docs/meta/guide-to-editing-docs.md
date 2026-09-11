@@ -37,7 +37,7 @@ If you just want to make a basic edit of an existing page, simply follow these s
 
 ![](/img/meta/create-fork.png)
 
-3. Click the 'View & Edit Page on GitHub` icon in the very top right of any page on this site.
+3. Click the 'Edit Page` button at the very bottom of any page on this site.
 
 ![](/img/meta/edit-page-button.png)
 
