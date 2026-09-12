@@ -6,6 +6,21 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 
 All content on this site is released under the Mozilla Public License v2.0.
 
+## Proposed site structure (WIP)
+```
+docs
+├── about these docs
+│   └── contributing to docs
+├── getting started
+│   ├── setup
+│   ├── codebase info
+│   ├── troubleshooting & debugging
+│   └── contributing
+├── robust toolbox
+├── ss14
+└── server hosting & forking
+```
+
 ## Roadmap
 
 - [X] Finish porting over all of the files on Robust Book (minus the meetings)

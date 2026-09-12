@@ -8,7 +8,7 @@ If you are considering adding or reworking some major component of the game it's
    
 2. Read through [SS14's Core Design Documentation](../../space-station-14/core-design.md) (for gameplay-related proposals).
 
-3. Write your proposal (see [guide to editing docs](../../meta/guide-to-editing-docs.md)).
+3. Write your proposal (see [guide to editing docs](../../../meta/guide-to-editing-docs.md)).
 
 4. When you are ready for your proposal to be reviewed, make a pull request.
 

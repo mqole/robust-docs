@@ -6,7 +6,7 @@ This tutorial goes over the **entity component system** system and several other
 
 ## Entities, components, and systems
 
-While Space Station 14 is written in C#, an object-oriented programming language, it uses a different data model to represent items in game. This data model is called the *entity component system* (ECS). (*Why do we do this? See [ECS](../../robust-toolbox/ecs.md)*)
+While Space Station 14 is written in C#, an object-oriented programming language, it uses a different data model to represent items in game. This data model is called the *entity component system* (ECS). (*Why do we do this? See [ECS](../robust-toolbox/ecs.md)*)
 
 ### Entities
 
@@ -32,7 +32,7 @@ Entity systems implement behavior by defining *event handlers* or by implementin
 
 As an another example, consider the `FoodComponent`. A programmer might make `EatingSystem` to handle eating food. `EatingSystem` listens to the `OnUseInHand` event - whenever `OnUseInHand` is heard/triggered, `EatingSystem` checks if there is a `FoodComponent` in the object that was used. If there is, then it lowers the value of `nutritionLeft` and plays a munching sound.
 
-That's the jist of ECS. If you're interested in learning more about it, then check out [Your mind on ECS](../../robust-toolbox/ecs.md). The ECS approach really is powerful and allows us to avoid spaghetti code, despite the complexity of SS14.
+That's the jist of ECS. If you're interested in learning more about it, then check out [Your mind on ECS](../robust-toolbox/ecs.md). The ECS approach really is powerful and allows us to avoid spaghetti code, despite the complexity of SS14.
 
 :::info
 You don't have to perfectly understand the ECS architecture at first. It can be daunting for both new programmers and those used to traditional OOP. However, the overall 'feel' and advantages of the architecture should become clear as you use it more.
@@ -66,7 +66,7 @@ An example is shown below:
 
 This is written in **YAML**, a data language similar to JSON, and is located in the folder `Resources/Prototypes/Entities/Objects/Fun/skub.yml`. All prototypes must be in the `Resources/Prototypes` folder and should be organized into the proper folder. 
 
-If you want more pointers on YAML, check [YAML Crash Course](../../general-development/tips/yaml-crash-course.md) and [Serialization](../../robust-toolbox/serialization.md).
+If you want more pointers on YAML, check [YAML Crash Course](../general-development/tips/yaml-crash-course.md) and [Serialization](../robust-toolbox/serialization.md).
 
 The entity prototype shown is "Skub", which looks like this in game:
 
@@ -104,7 +104,7 @@ Now let's fill out the prototype with a basic clown horn. Because we don't yet h
     state: icon
 ```
 
-Here we have a basic entity with a single component: `SpriteComponent`. Check out [the RSI spec](../../specifications/robust-station-image.md) if you're unfamiliar with the RSI system, but the gist is that we have two fields for `SpriteComponent`: the RSI path relative to `Resources/Textures` (in this case the folder is named bikehorn.rsi) and the icon state.
+Here we have a basic entity with a single component: `SpriteComponent`. Check out [the RSI spec](../specifications/robust-station-image.md) if you're unfamiliar with the RSI system, but the gist is that we have two fields for `SpriteComponent`: the RSI path relative to `Resources/Textures` (in this case the folder is named bikehorn.rsi) and the icon state.
 
 One thing to note is that prototypes support parenting. In this case, `BaseItem` is our parent and contains a variety of components that are universal to all items. Thus, our clown horn will have those components too: basic components like `Item`, `Pullable`, and `Physics`. Parents aren't required at all, but they're useful in certain cases, like here.
 
@@ -124,7 +124,7 @@ Where do we put it? To answer this question, we have to think broad. We have to 
 
 ### Client-Server Paradigm
 
-If you haven't read [Codebase Organization](../../general-development/codebase-info/codebase-organization.md) already, it might be worth a read. But for this tutorial, there are only two things you need to understand:
+If you haven't read [Codebase Organization](../general-development/codebase-info/codebase-organization.md) already, it might be worth a read. But for this tutorial, there are only two things you need to understand:
 
 - The SERVER and CLIENT execute SEPARATELY.
 - The server should handle most logic to prevent exploits. Anything on the client can be altered by a malicious user.

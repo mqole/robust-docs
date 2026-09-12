@@ -5,7 +5,8 @@
     {
       "term": "SS14",
       "definition": "Space Station 14. Remake of Space Station 13 (SS13).",
-      "abbreviation": "Space Station 14"
+      "abbreviation": "Space Station 14",
+      "autoLink": false
     },
     {
       "term": "SS13",
@@ -19,14 +20,14 @@
     {
       "term": "Robust Toolbox",
       "definition": "Custom game engine on which SS14 is built.",
-      "aliases": ["RT", "Engine"],
+      "aliases": ["RT", "Engine", "RobustToolbox"],
       "caseSensitive": true
     },
     {
       "term": "Content",
       "definition": "The 'game' running on RobustToolbox.",
       "aliases": ["Content Pack"],
-      "caseSensitive": true
+      "autoLink": false
     },
     {
       "term": "CVar",

@@ -343,7 +343,7 @@ You can make controls contain other controls ([remember, it's a tree!](#the-cont
 
 The contents of attributes are converted to the type of the property automatically. For simple stuff like numbers, strings, enums, etc... it's quite obvious. For types such as `Vector2` and `Thickness` (used by margins) it's space-separated numbers.
 
-You may have also noticed the funny `{Loc 'ui-...'}` thing. This is called a **markup extension**. The short version is that they're magic you can put in properties to do special stuff. In this case, `{Loc 'key'}` looks up a [localized string](../guides/misc/fluent-and-localization.md).
+You may have also noticed the funny `{Loc 'ui-...'}` thing. This is called a **markup extension**. The short version is that they're magic you can put in properties to do special stuff. In this case, `{Loc 'key'}` looks up a [localized string](../ss14-by-example/fluent-and-localization.md).
 
 ### Usage
 
