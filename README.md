@@ -33,4 +33,6 @@ docs
 
 ## To Fix
 
+- Glossary plugin borked when using custom text
+- include mermaid example in guide
 - Searchbar not loading
