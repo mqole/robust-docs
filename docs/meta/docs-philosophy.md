@@ -17,6 +17,8 @@ When someone is looking for 'documentation' on a subject, there's really two dif
 
 Or, they can be searching for the *what*--the specifics of the APIs they're working with, what methods they can call, what to pass into those methods, overrides for abstract methods, etc. This is best served by *your IDE*, because C# is a statically typed language and this information is very easily available to anyone programming. Search in files is also *very* powerful, when your IDE can't help (such as searching for available YAML datafields).
 
+It should also be noted that a lot of the specifics of API methods are constantly changing, as development work continues on the Engine and <GlossaryTerm term="Content">Content</GlossaryTerm> alike. Maintaining docs takes a lot more effort if all this information is included! Write your static documentation with an understanding that **the specifics of a system may fluctuate**, and focus on what the *intention* of the system is rather than how it actually accomplishes its goal.
+
 :::info[Example]
 Good:
 ```
@@ -36,4 +38,4 @@ glubTargets: this field is a dictionary of string to entityuid of glub target
 ```
 :::
 
-There is no guarantee that all of the docs pages here will actually adhere to this concept! A lot of them are very, very old. If you feel like rewriting them, [go for it!](./guide-to-editing-docs)
+There is no guarantee that all of the docs pages here will actually adhere to this concept! A lot of them are very, very old. If you feel like rewriting them, [go for it!](./docs-contributing)

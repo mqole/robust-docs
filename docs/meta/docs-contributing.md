@@ -5,7 +5,7 @@ sidebar_position: 1
 
 As you may be able to notice, this docs site is completely open source and free to edit on GitHub. You can see the GitHub page for this site at [https://github.com/mqole/robust-docs](https://github.com/mqole/robust-docs).
 
-If you want to get an idea of what features are at your disposal when writing documentation, go to the [Docs Example Page](./docs-example-page).
+If you want to get an idea of what features are at your disposal when writing documentation, go to the [Docs Example Page](./docs-examples).
 
 ## Style
 

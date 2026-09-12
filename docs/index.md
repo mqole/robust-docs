@@ -13,9 +13,6 @@ If you are a player, you are looking for [the player wiki](https://wiki.spacesta
 
 This wiki is written in [Markdown](https://docs.requarks.io/en/editors/markdown) using `Docusaurus`.
 
-:::note[Making contributions]
-If you would like to make contributions to this documentation site, it's hosted fully open source on GitHub and you can make a webedit PR to any page using the button in the top right. Check out the [Guide to Editing Docs](./meta/guide-to-editing-docs.md) page for more information.
-:::
 
 ## Getting Started
 
@@ -24,3 +21,10 @@ If you would like to make contributions to this documentation site, it's hosted 
 - [:page_with_curl: Core Game Design](./upstream/space-station-14/core-design.md)
 - [:world_map: Mapping](./upstream/space-station-14/mapping.md)
 - [:chart_with_upwards_trend: Git for the SS14 Developer](./upstream/general-development/setup/git-for-the-ss14-developer.md)
+
+## Want to contribute to these docs?
+If you would like to make contributions to this documentation site, it's hosted fully open source on GitHub and you can make a webedit PR to any page by clicking the 'Edit this page' button at the footer. You can also click the GitHub button in the top-right corner to visit the GitHub repository.
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList/>

@@ -35,6 +35,8 @@ const config: Config = {
           routeBasePath: '/', // Serve the docs at the site's root
           sidebarPath: './sidebars.ts',
           editUrl: 'https://github.com/mqole/robust-docs/tree/main/',
+          showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
         },
