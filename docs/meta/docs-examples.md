@@ -80,6 +80,16 @@ Silly Atmospherics maintainer, the derivation is written in $\KaTeX$, so it must
 
 This wiki also supports [Mermaid](https://mermaid.ai/), which can be used to draw diagrams. Use the online [live editor](https://mermaid.ai/live/edit) to see some examples of what you can make using Mermaid!
 
+``````
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+``````
+
 ```mermaid
 graph TD;
     A-->B;
@@ -112,4 +122,4 @@ You can also define abbreviations, and prevent a term from automatically being u
     "autoLink": false
 },
 ```
-When I type SS14, no link is generated. If I want to generate a link anyway, I just type `<GlossaryTerm term="SS14">SS14</GlossaryTerm>` like so. <GlossaryTerm term="SS14">You can make any text link to a term's definition this way.</GlossaryTerm> And note how hovering over that text will show you the unabbreviated form of SS14!
+When I type SS14, no link is generated. If I want to generate a link anyway, I just type `<GlossaryTerm term="SS14">SS14</GlossaryTerm>` like so. <GlossaryTerm term="SS14" documentationPath = "/robust-docs/glossary#SS14">You can make any text link to a term's definition this way.</GlossaryTerm> And note how hovering over that text will show you the unabbreviated form of SS14!

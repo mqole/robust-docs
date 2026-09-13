@@ -33,6 +33,5 @@ docs
 
 ## To Fix
 
-- Glossary plugin borked when using custom text
-- include mermaid example in guide
+- MERMAID NOT WORKING!!!
 - Searchbar not loading
