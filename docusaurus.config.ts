@@ -76,9 +76,21 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'sidebar',
+          sidebarId: 'setup',
           position: 'left',
-          label: 'Documents',
+          label: 'Setup',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'guides',
+          position: 'left',
+          label: 'Guides',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'upstream',
+          position: 'left',
+          label: 'Upstream Docs (MESSY) (OUTDATED) (WIP)',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {

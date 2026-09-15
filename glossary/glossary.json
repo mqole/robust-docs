@@ -4,13 +4,13 @@
   "terms": [
     {
       "term": "SS14",
-      "definition": "Space Station 14. Remake of Space Station 13 (SS13).",
+      "definition": "Remake of Space Station 13 (SS13).",
       "abbreviation": "Space Station 14",
       "autoLink": false
     },
     {
       "term": "SS13",
-      "definition": "Space Station 13. The original game that Space Station 14 (SS14) is based on.",
+      "definition": "The original game that Space Station 14 (SS14) is based on.",
       "abbreviation": "Space Station 13"
     },
     {
@@ -22,6 +22,30 @@
       "definition": "Custom game engine on which SS14 is built.",
       "aliases": ["RT", "Engine", "RobustToolbox"],
       "caseSensitive": true
+    },
+    {
+      "term": "Git",
+      "definition": "An open-source version control software that allows users to make new changes, view different changes, see who made changes, etc. without having to coordinate and tabulate everything themselves.",
+      "references": [{
+        "label": "Official site",
+        "url": "https://git-scm.com/"
+      }],
+      "autoLink": false
+    },
+    {
+      "term": "GitHub",
+      "definition": "An online service run by Microsoft that hosts Git repositories for easy collaboration. SS14's main repository is hosted on GitHub.",
+      "references": [{
+        "label": "Official site",
+        "url": "https://github.com/"
+      }],
+      "autoLink": false
+    },
+    {
+      "term": "Repository",
+      "definition": "A folder containing a codebase.",
+      "aliases": ["repo"],
+      "autoLink": false
     },
     {
       "term": "Content",
@@ -58,7 +82,7 @@
       "abbreviation": "Inversion of Control",
       "caseSensitive": true,
       "documentation": {
-        "path": "docs/robust-toolbox/ioc",
+        "path": "/upstream/robust-toolbox/ioc",
         "label": "Read more"
       }
     },
@@ -99,10 +123,10 @@
       "definition": "A crossplatform IDE for C#. (Can be obtained for free for non-commercial use).",
       "aliases": ["JetBrains Rider"],
       "caseSensitive": true,
-      "references": {
+      "references": [{
         "label": "Downloadable here",
         "url": "https://www.jetbrains.com/rider/"
-      }
+      }]
     },
     {
       "term": "Watchdog",

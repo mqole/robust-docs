@@ -5,10 +5,8 @@
 
 .glossaryTerm {
   color: var(--ifm-font-color-base);
-  text-decoration: underline;
-  text-decoration-style: dotted;
   text-underline-offset: 0.2rem;
-  border-bottom: 1px dotted;
+  border-bottom: 2px dotted;
   border-bottom-color: color-mix(in srgb, var(--ifm-font-color-base) 20%, transparent);
   cursor: help;
   transition: all 0.2s;

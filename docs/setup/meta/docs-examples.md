@@ -122,4 +122,4 @@ You can also define abbreviations, and prevent a term from automatically being u
     "autoLink": false
 },
 ```
-When I type SS14, no link is generated. If I want to generate a link anyway, I just type `<GlossaryTerm term="SS14">SS14</GlossaryTerm>` like so. <GlossaryTerm term="SS14" documentationPath = "/robust-docs/glossary#SS14">You can make any text link to a term's definition this way.</GlossaryTerm> And note how hovering over that text will show you the unabbreviated form of SS14!
+When I type SS14, no link is generated. If I want to generate a link anyway, I just type `<GlossaryTerm term="SS14">SS14</GlossaryTerm>` like so. <GlossaryTerm term="SS14">You can make any text link to a term's definition this way.</GlossaryTerm> And note how hovering over that text will show you the unabbreviated form of SS14!
