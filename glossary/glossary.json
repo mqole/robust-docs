@@ -1,27 +1,89 @@
 {
   "title": "Glossary",
-  "description": "Technical terms used in our documentation",
+  "description": "Technical terms used in these docs, in alphabetical order.",
   "terms": [
     {
-      "term": "SS14",
-      "definition": "Remake of Space Station 13 (SS13).",
-      "abbreviation": "Space Station 14",
-      "autoLink": false
+      "term": "Avalonia",
+      "definition": "UI framework used for the launcher."
     },
     {
-      "term": "SS13",
-      "definition": "The original game that Space Station 14 (SS14) is based on.",
-      "abbreviation": "Space Station 13"
+      "term": "Box2D",
+      "definition": "The basis for SS14's (heavily modified) physics system."
+    },
+    {
+      "term": "Branch",
+      "definition": "Self-contained versions of the codebase that you can add commits to. The default branch is usually `master` or `main`, but you can make as many as you like.",
+      "aliases": ["Git branch"],
+      "autoLink": false,
+      "documentation": {
+        "path": "/setup/getting-started/git/git-setup#branches",
+        "label": "Read more"
+      }
     },
     {
       "term": "BYOND",
       "definition": "The game engine for SS13."
     },
     {
-      "term": "Robust Toolbox",
-      "definition": "Custom game engine on which SS14 is built.",
-      "aliases": ["RT", "Engine", "RobustToolbox"],
+      "term": "Checkout",
+      "definition": "The act of switching to another branch so you can edit it or look at its changes locally.",
+      "autoLink": false
+    },
+    {
+      "term": "Commit",
+      "definition": "A snapshot of the repository's working tree at a given time. Basically a save point. A 'commit' is just a list of files that have been changed from the last commit, and the changes that are 'committed' are the changes that you've 'staged'.",
+      "autoLink": false,
+      "documentation": {
+        "path": "/setup/getting-started/git/git-setup#commits",
+        "label": "Read more"
+      }
+    },
+    {
+      "term": "Content",
+      "definition": "The 'game' running on RobustToolbox.",
+      "aliases": ["Content Pack"],
+      "autoLink": false
+    },
+    {
+      "term": "CVar",
+      "definition": "Convar/Console Variable. Configurable value that you can change in the config files or through the console.",
+      "aliases": ["CVars", "CCVar", "CCVars"]
+    },
+    {
+      "term": "DMI",
+      "definition": "BYOND/SS13's sprite file format. Converted to an RSI for our usage.",
+      "aliases": [".dmi"],
       "caseSensitive": true
+    },
+    {
+      "term": "ECS",
+      "definition": "Entity Component System",
+      "abbreviation": "Entity Component System",
+      "caseSensitive": true
+    },
+    {
+      "term": "EntityUid",
+      "definition": "Entity Unique Identifier",
+      "abbreviation": "Entity Unique Identifier"
+    },
+    {
+      "term": "Fetching",
+      "definition": "The act of getting the branches and commits of a remote repository, but not actually doing anything with them yet.",
+      "autoLink": false,
+      "documentation": {
+        "path": "/setup/getting-started/git/git-setup#fetching",
+        "label": "Read more"
+      }
+    },
+    {
+      "term": "Fork",
+      "definition": "A repository that is based on another repository. If you're going to make a pull request to the SS14 repo, you need to fork it first.",
+      "aliases": ["forking, forked"],
+      "autoLink": false,
+      "documentation": {
+        "path": "/setup/getting-started/git/git-setup#remote-repository",
+        "label": "Read more"
+      }
     },
     {
       "term": "Git",
@@ -42,39 +104,9 @@
       "autoLink": false
     },
     {
-      "term": "Repository",
-      "definition": "A folder containing a codebase.",
-      "aliases": ["repo"],
-      "autoLink": false
-    },
-    {
-      "term": "Content",
-      "definition": "The 'game' running on RobustToolbox.",
-      "aliases": ["Content Pack"],
-      "autoLink": false
-    },
-    {
-      "term": "CVar",
-      "definition": "Convar/Console Variable. Configurable value that you can change in the config files or through the console.",
-      "aliases": ["CVars", "CCVar", "CCVars"]
-    },
-    {
-      "term": "YAML",
-      "definition": "YAML Ain't Markup Language. Used to define prototypes.",
-      "abbreviation": "YAML Ain't Markup Language",
-      "aliases": ["YML", ".yml"]
-    },
-    {
-      "term": "TOML",
-      "definition": "Tom's Obvious Minimal Language. Like YAML but for config.",
-      "abbreviation": "Tom's Obvious Minimal Language",
-      "aliases": [".toml"]
-    },
-    {
-      "term": "ECS",
-      "definition": "Entity Component System",
-      "abbreviation": "Entity Component System",
-      "caseSensitive": true
+      "term": "GUI",
+      "definition": "GUI",
+      "abbreviation": "Guided User Interface"
     },
     {
       "term": "IoC",
@@ -87,17 +119,54 @@
       }
     },
     {
-      "term": "DMI",
-      "definition": "BYOND/SS13's sprite file format. Converted to an RSI for our usage.",
-      "aliases": [".dmi"],
-      "caseSensitive": true
+      "term": "Lidgren",
+      "definition": "Networking library."
     },
     {
-      "term": "RSI",
-      "definition": "Robust Station Images. SS14's image 'file' format (actually a folder).",
-      "abbreviation": "Robust Station Image",
-      "aliases": [".rsi"],
-      "caseSensitive": true
+      "term": "Merge Conflict",
+      "definition": "A file conflict which occurs when integrating changes from one branch into another can't be done automatically, because they both change the same area in a file, or their changes are mutually exclusive in some other way.",
+      "autoLink": false,
+      "documentation": {
+        "path": "/setup/getting-started/git/merge-conflicts",
+        "label": "Read more"
+      }
+    },
+    {
+      "term": "Merging",
+      "definition": "The act of integrating the changes from one branch into another branch.",
+      "autoLink": false,
+      "documentation": {
+        "path": "/setup/getting-started/git/git-setup#branches",
+        "label": "Read more"
+      }
+    },
+    {
+      "term": "Pushing",
+      "definition": "The act of integrating your local changes into a remote repository.",
+      "autoLink": false,
+      "documentation": {
+        "path": "/setup/getting-started/git/git-setup#pushing-local-changes",
+        "label": "Read more"
+      }
+    },
+    {
+      "term": "Pull Request",
+      "definition": "A GitHub-specific action that allow you to request that your local branch and all of its changes be merged into another repository's branch.",
+      "aliases": ["PR"],
+      "autoLink": false,
+      "documentation": {
+        "path": "/setup/getting-started/git/pull-request",
+        "label": "Read more"
+      }
+    },
+    {
+      "term": "Pulling",
+      "definition": "The act of integrating changes from a remote repository's branch into your local branch.",
+      "autoLink": false,
+      "documentation": {
+        "path": "/setup/getting-started/git/git-setup#pulling",
+        "label": "Read more"
+      }
     },
     {
       "term": "PVS",
@@ -106,17 +175,24 @@
       "caseSensitive": true
     },
     {
-      "term": "VSCode",
-      "definition": "Visual Studio Code. Not the same as VS.",
-      "abbreviation": "Visual Studio Code",
-      "aliases": ["VSC"],
-      "caseSensitive": true
+      "term": "Remote",
+      "definition": "A name for and link to a remote repository that your local repository can use.",
+      "relatedTerms": ["Repository"],
+      "autoLink": false,
+      "documentation": {
+        "path": "/setup/getting-started/git/git-setup#remotes",
+        "label": "Read more"
+      }
     },
     {
-      "term": "VS",
-      "definition": "Visual Studio Community 2017/19. Not the same as VSC. The IDE for people who can't get a Rider license.",
-      "abbreviation": "Visual Studio Community",
-      "caseSensitive": true
+      "term": "Repository",
+      "definition": "A folder where you can use Git to make changes and keep track of changes made. Local repositories are repositories you have on your computer, and remote repositories are repositories that live on websites like GitHub. Repositories are made up of a lot of branches.",
+      "aliases": ["repo, local repository, remote repository"],
+      "autoLink": false,
+      "documentation": {
+        "path": "/setup/getting-started/git/git-setup#repositories",
+        "label": "Read more"
+      }
     },
     {
       "term": "Rider",
@@ -129,25 +205,81 @@
       }]
     },
     {
+      "term": "Robust Toolbox",
+      "definition": "Custom game engine on which SS14 is built.",
+      "aliases": ["RT", "Engine", "RobustToolbox"],
+      "caseSensitive": true
+    },
+    {
+      "term": "RSI",
+      "definition": "Robust Station Images. SS14's image 'file' format (actually a folder).",
+      "abbreviation": "Robust Station Image",
+      "aliases": [".rsi"],
+      "caseSensitive": true
+    },
+    {
+      "term": "SS13",
+      "definition": "The original game that Space Station 14 (SS14) is based on.",
+      "abbreviation": "Space Station 13"
+    },
+    {
+      "term": "SS14",
+      "definition": "Remake of Space Station 13 (SS13).",
+      "abbreviation": "Space Station 14",
+      "autoLink": false
+    },
+    {
+      "term": "Staging",
+      "definition": "The act of adding (with the git add command) changes from your working tree into the 'staging area', where you can then commit staged changes to a branch.",
+      "aliases": ["Staging Area", "Staged changes"],
+      "autoLink": false,
+      "documentation": {
+        "path": "/setup/getting-started/git/git-setup#staging-changes",
+        "label": "Read more"
+      }
+    },
+    {
+      "term": "Submodule",
+      "definition": "A repositories that is located inside another repository.",
+      "relatedTerms": ["Repository"],
+      "autoLink": false,
+      "documentation": {
+        "path": "/setup/getting-started/git/git-setup#submodules",
+        "label": "Read more"
+      }
+    },
+    {
+      "term": "TOML",
+      "definition": "Tom's Obvious Minimal Language. Like YAML but for config.",
+      "abbreviation": "Tom's Obvious Minimal Language",
+      "aliases": [".toml"]
+    },
+    {
+      "term": "VS",
+      "definition": "Visual Studio Community 2017/19. Not the same as VSC. The IDE for people who can't get a Rider license.",
+      "abbreviation": "Visual Studio Community",
+      "caseSensitive": true
+    },
+    {
+      "term": "VSCode",
+      "definition": "Visual Studio Code. Not the same as VS.",
+      "abbreviation": "Visual Studio Code",
+      "aliases": ["VSC"],
+      "caseSensitive": true
+    },
+    {
       "term": "Watchdog",
       "definition": "SS14 Server Watchdog. Used for dedicated server logging, updating and general management."
     },
     {
-      "term": "Lidgren",
-      "definition": "Networking library."
+      "term": "Working Tree",
+      "definition": "Every file and folder that's in the repository."
     },
     {
-      "term": "Box2D",
-      "definition": "The basis for SS14's (heavily modified) physics system."
-    },
-    {
-      "term": "Avalonia",
-      "definition": "UI framework used for the launcher."
-    },
-    {
-      "term": "EntityUid",
-      "definition": "Entity Unique Identifier",
-      "abbreviation": "Entity Unique Identifier"
+      "term": "YAML",
+      "definition": "YAML Ain't Markup Language. Used to define prototypes.",
+      "abbreviation": "YAML Ain't Markup Language",
+      "aliases": ["YML", ".yml"]
     }
   ]
 }
