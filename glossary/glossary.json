@@ -30,6 +30,11 @@
       "autoLink": false
     },
     {
+      "term": "CLI",
+      "definition": "An interface that connects to the command line to run scripts.",
+      "abbreviation": "Command Line Interface"
+    },
+    {
       "term": "Commit",
       "definition": "A snapshot of the repository's working tree at a given time. Basically a save point. A 'commit' is just a list of files that have been changed from the last commit, and the changes that are 'committed' are the changes that you've 'staged'.",
       "autoLink": false,
@@ -48,6 +53,11 @@
       "term": "CVar",
       "definition": "Convar/Console Variable. Configurable value that you can change in the config files or through the console.",
       "aliases": ["CVars", "CCVar", "CCVars"]
+    },
+    {
+      "term": "Diff",
+      "definition": "A comparison between two files of lines or information changed.",
+      "abbreviation": "Differential"
     },
     {
       "term": "DMI",

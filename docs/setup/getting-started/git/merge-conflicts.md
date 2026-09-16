@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
 ---
-# Resolving Merge Conflicts
+# Merge Conflicts
 
 *WIP i'll write a better guide for this later because it's important*
 
