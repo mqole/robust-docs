@@ -60,7 +60,21 @@ const config: Config = {
       }
     ],
   ],
+
+  // Mermaid:
+    
+    markdown: {
+      mermaid: true,
+    },
+    
+    themes: ['@docusaurus/theme-mermaid'],
   
+    plugins: [
+      [require.resolve("docusaurus-lunr-search"), // lunr search. won't work in localenv.
+        {enableHighlight: true}
+      ]
+    ],
+
   themeConfig: {
     image: 'img/logo.png',
     defaultMode: 'dark',
@@ -129,14 +143,6 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
-
-    // Mermaid:
-    
-    markdown: {
-      mermaid: true,
-    },
-    
-    themes: ['@docusaurus/theme-mermaid'],
     
     // KaTeX:
     
@@ -162,12 +168,6 @@ const config: Config = {
         crossorigin: "anonymous",
         defer: true,
       }
-    ],
-
-    plugins: [
-      [require.resolve("docusaurus-lunr-search"), // lunr search. won't work in localenv.
-        {enableHighlight: true}
-      ]
     ],
 
   } satisfies Preset.ThemeConfig,

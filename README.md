@@ -91,7 +91,6 @@ docs
 
 ## To Fix
 
-- MERMAID NOT WORKING!!!
 - Searchbar not loading
 - glossary underlining is messy (awaiting [issue](https://github.com/mcclowes/docusaurus-plugin-glossary/issues/129))
 - glossary index incomplete, should fill with docs, aliases, associated terms, etc
