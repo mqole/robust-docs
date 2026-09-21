@@ -68,7 +68,7 @@ Your remote repository doesn't automatically update with changes from the origin
 
 Navigate to the [Space Station 14 repository](https://github.com/space-wizards/space-station-14) and click here:
 
-![forking.png](/img/general-development/setup/git-for-the-ss14-developer/forking.png)
+![forking.png](/img/docs/setup/git/forking.png)
 
 From there, it'll ask you where to fork it and what to name it--just to your regular account, and name it whatever you please! I'd stick with `space-station-14` if you just want to help out with development, though.
 
@@ -106,7 +106,7 @@ Open up SmartGit and navigate to the desired location, then:
 
 Right click:
 
-![gbclone.png](/img/general-development/setup/git-for-the-ss14-developer/gbclone.png)
+![gbclone.png](/img/docs/setup/git/gbclone.png)
 
 </details>
 
@@ -234,7 +234,7 @@ Commits have an author, timestamp, a message, and some code changes attached to 
 
 Commits are how history is built up--you can actually view the history of every single commit made to the SS14 repository from the beginning, which is pretty cool:
 
-![commitexample.png](/img/general-development/setup/git-for-the-ss14-developer/commitexample.png)
+![commitexample.png](/img/docs/setup/git/commitexample.png)
 
 (done with `git log --reverse`)
 
@@ -382,7 +382,7 @@ This is assuming you installed SmartGit with the option that the main window sho
 <summary>Git Bash</summary>
 
 
-![gbsacc.png](/img/general-development/setup/git-for-the-ss14-developer/gbsacc.png)
+![gbsacc.png](/img/docs/setup/git/gbsacc.png)
 
 
 </details>
@@ -415,7 +415,7 @@ Now that you've verified that all of these changes look good, we'll add them to 
 <summary>Git Bash</summary>
 
 
-![gbstaging.png](/img/general-development/setup/git-for-the-ss14-developer/gbstaging.png)
+![gbstaging.png](/img/docs/setup/git/gbstaging.png)
 
 
 </details>
@@ -462,7 +462,7 @@ Selecting 'push all branches' does what it says on the tin. Can be useful.
 <summary>Git Bash</summary>
 
 
-![gbpushing.png](/img/general-development/setup/git-for-the-ss14-developer/gbpushing.png)
+![gbpushing.png](/img/docs/setup/git/gbpushing.png)
 
 
 </details>
@@ -600,7 +600,7 @@ First, checkout your `master` branch. We covered this earlier. Then,
 <summary>Git Bash</summary>
 
 
-![gbpm.png](/img/general-development/setup/git-for-the-ss14-developer/gbpm.png)
+![gbpm.png](/img/docs/setup/git/gbpm.png)
 
 
 </details>

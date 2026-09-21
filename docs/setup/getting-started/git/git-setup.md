@@ -16,9 +16,17 @@ This page will assume that you're using Git in the command line (a good habit to
 While these alternatives exist, its **very highly recommended** that you at least try using the command line before trying one of them!
 :::
 
-If you haven't already installed Git, go to [their website](https://git-scm.org) and install it now. This will install the Git backend, as well as Git Bash (if you select that option). If you're on Linux, you'll probably just be using Git through your terminal or whichever IDE you've chosen, and chances are you have it installed already.
+If you haven't already installed Git, you can do so at [their website](https://git-scm.org). It's recommended that you [add Git to your PATH](/img/docs/setup/git/git-path.png) if you want to be able to run Git through anything other than Git Bash (for example an IDE, or the Command Line).
 
-While you're here, install `Python 3.7+` as well if you don't have it already. You can do that [here](https://www.python.org/) for Windows and Mac, and if you're on Linux you almost certainly have Python installed already.
+While you're here, install `Python 3.7+` as well if you don't have it already. You can do that [here](https://www.python.org/) for Windows and Mac, and if you're on Linux you almost certainly have Python installed already. You will also need to [add Python to your PATH](/img/docs/setup/git/python-path.png).
+
+:::tip[Windows and Winget]
+Windows users may prefer to use Winget for an easier install. Just open Command Line and enter the following:
+```
+winget install Git.Git
+winget install Python.Python.3.13
+```
+:::
 
 :::danger[Name and Email privacy]
 When [setting up your `user.name` and `user.email`](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup#_your_identity), know that these are publicly displayed on all commits that you create. If you want to keep your information private, you can set `user.name` to your username instead of your real name, and `user.email` to the one provided by GitHub when the [`Keep my email addresses private`](https://github.com/settings/emails#toggle_visibility) setting is checked in [GitHub Email Settings](https://github.com/settings/emails#primary_email_select_label).
@@ -40,7 +48,7 @@ First, let's make our own remote repository fork of Space Station 14. You'll nee
 
 Navigate to the [Space Station 14 repository](https://github.com/space-wizards/space-station-14) and click here:
 
-![forking.png](/img/general-development/setup/git-for-the-ss14-developer/forking.png)
+![forking.png](/img/docs/setup/git/forking.png)
 
 From there, it'll ask you where to fork it and what to name it--just to your regular account, and name it whatever you please! (but you'll probably want to stick with the default name.)
 
@@ -54,9 +62,14 @@ This repository is the one on your computer.
 
 Now, we'll need to download our remote repository onto our computer (**cloning**) so we can add ~~20 pairs of clown shoes to every locker~~ some changes to it. You *can* technically make edits to your remote repository via GitHub, but having it on your computer means you can use IDEs like Visual Studio or Rider to build the game and run tests, as well as handle Git stuff easily.
 
+:::danger[Do not download the repository as a zip from GitHub]
+You need to use the `git` in some shape or form (Command line or a Graphical interface) to download/clone the code.
+The "Download zip" option on GitHub will NOT work since it does not contain the submodules required (aka the game engine, Robust Toolbox) and also does not contain previous history, which means it would be impossible to even make a commit without it present.
+:::
+
 Navigate to somewhere on your computer where you want to put the local repository, and right click:
 
-![gbclone.png](/img/general-development/setup/git-for-the-ss14-developer/gbclone.png)
+![gbclone.png](/img/docs/setup/git/gbclone.png)
 
 Then, we'll enter the command for cloning **our** remote repository (not the `space-wizards/space-station-14` repository): 
 
@@ -82,10 +95,16 @@ A submodule is basically just a repository within a repository. Space Station 14
 
 Usually submodules have to be updated manually, but SS14 has an automatic submodule updater so you don’t have to worry about running `git submodule update --init --recursive` (the command for manually updating submodules) all the time.
 
-Run `RUN_THIS.py` inside the repo you downloaded with Python. This should take a few seconds. If it instantly stops, you're either up to date or you need to make sure you have the latest version of Python. 
+Run `RUN_THIS.py` inside the repo you downloaded with Python. **If running `RUN_THIS.py` immediately opens and closes a window: do not worry.** This does not mean that it failed. The script closes automatically upon completion, so if you want to verify that it worked properly, check the submodule `/RobustToolbox/` and verify that all the files are there.
 
-:::info
+:::info[RUN_THIS.py isnt working!]
+Ensure that you have the latest version of Python installed.
+
 If you are on Windows and get redirected to the Microsoft Store, or encounter a message in your terminal claiming that Python is not installed when you attempt to run the above command, you will need to disable the Microsoft shortcut that might be causing this issue. You can do this by searching for `Manage App Execution Aliases` in the Windows search and then turning off the two Python references.
+
+If Python was installed from the website and the `python` command works, but you still get the error `py is not installed`, then check if `C:\WINDOWS\py.exe` works. If so, then add `C:\WINDOWS` to your path.
+
+`The system cannot find the specified file` error usually means that OneDrive is conflicting with the git repository. Clone the Git repo outside of OneDrive or disable syncing for the cloned folder.
 
 And, of course, if for some reason `RUN_THIS.py` refuses to work, you can always just run `git submodule update --init --recursive`.
 :::
@@ -128,7 +147,7 @@ Commits have an author, timestamp, a message, and some code changes attached to 
 
 Commits are how history is built up. You can actually view the history of every single commit made to the SS14 repository from the beginning, which is pretty cool:
 
-![commitexample.png](/img/general-development/setup/git-for-the-ss14-developer/commitexample.png)
+![commitexample.png](/img/docs/setup/git/commitexample.png)
 
 (viewable with `git log --reverse`)
 
@@ -182,13 +201,13 @@ One more important thing: Before you can `commit` your changes, you have to `add
 
 If you want to see what you've currently changed, and what's in the staging area, you can use the command `git status`:
 
-![gbsacc.png](/img/general-development/setup/git-for-the-ss14-developer/gbsacc.png)
+![gbsacc.png](/img/docs/setup/git/gbsacc.png)
 
 Here you can see that we've deleted one file: `README.md`. Now, we'll add all our changes to the staging area by using `git add -a` (`-a` for 'all'), and `git commit -m [commit message]` (`-m` for 'message') to commit only our staged changes.
 
 If you want to only add specific files, you can substitute the `-a` in `git add -a` for the filepath (for example, `git add README.md`). You can remove files from the staging area by using `rm` in place of `add` (`rm` being short for 'remove').
 
-![gbstaging.png](/img/general-development/setup/git-for-the-ss14-developer/gbstaging.png)
+![gbstaging.png](/img/docs/setup/git/gbstaging.png)
 
 Congratulations, you've just made a commit!
 
@@ -198,7 +217,7 @@ It's pretty easy to push our changes now that we've committed them. Be aware tha
 
 When pushing changes, we specify the *remote* repository that we're pushing to and the *local* branch that we're pushing: in this instance, we want to push to the remote URL that we've given the name `origin`, and the branch we want to push is named `funny-feature`. So the command we want to use is `git push origin funny-feature`.
 
-![gbpushing.png](/img/general-development/setup/git-for-the-ss14-developer/gbpushing.png)
+![gbpushing.png](/img/docs/setup/git/gbpushing.png)
 
 Now if we visit our remote repository on GitHub's website, we should be able to see our new branch there!
 
@@ -224,6 +243,6 @@ First make sure to `checkout` the branch you want to pull your changes onto, the
 
 In our case, we've already run `git fetch upstream` and `git checkout master`, so we can just run `git pull upstream master` to pull all of the new commits from our upstream's remote repository to our local `master` branch:
 
-![gbpm.png](/img/general-development/setup/git-for-the-ss14-developer/gbpm.png)
+![gbpm.png](/img/docs/setup/git/gbpm.png)
 
 Sometimes when you pull changes, you may need to resolve merge conflicts, just like when you merge branches. Read more about that [here](./merge-conflicts.md)

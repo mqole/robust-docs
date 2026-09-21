@@ -6,8 +6,8 @@ sidebar_position: 2
 
 First you're gonna need some software:
 
-* [Git](https://git-scm.com/) or one of the [many](https://www.sourcetreeapp.com/) [third-party](http://www.syntevo.com/smartgit/) [UIs](https://tortoisegit.org/) that make it easier to use. Make sure to let it install to your PATH like [this](/img/general-development/setup/setting-up-a-development-environment/git-path.png).
-* [Python 3.7 or higher](https://www.python.org/). Make sure to install it into your [PATH on Windows](/img/general-development/setup/setting-up-a-development-environment/python-path.png). Also make sure the 'py launcher' option is enabled when installing on Windows. You should get python from [python.org](https://www.python.org/). Versions installed from the windows store sometimes cause build issues.
+* [Git](https://git-scm.com/) or one of the [many](https://www.sourcetreeapp.com/) [third-party](http://www.syntevo.com/smartgit/) [UIs](https://tortoisegit.org/) that make it easier to use. Make sure to let it install to your PATH like [this](/img/docs/setup/git/git-path.png).
+* [Python 3.7 or higher](https://www.python.org/). Make sure to install it into your [PATH on Windows](/img/docs/setup/git/python-path.png). Also make sure the 'py launcher' option is enabled when installing on Windows. You should get python from [python.org](https://www.python.org/). Versions installed from the windows store sometimes cause build issues.
 * [.NET 10.0 SDK](https://dotnet.microsoft.com/download/dotnet/10.0). Visual Studio also installs this if you're on Windows.
   * Apple Silicon (ARM64) Mac users: Some older codebases will only work with the x64 .NET and not the ARM64 one. You can either download x64 dotnet, or suggest your codebase to update their robust toolbox to at minimum 267.0.0 to add support (or just update it yourself).
 * Preferably an IDE to make development not painful (all free options unless otherwise noted):
@@ -176,12 +176,12 @@ After this, the Solution Explorer should look something like this, and you shoul
 
 In Rider, you can "attach" the resources directory to the solution. Do this by right clicking the solution in the explorer, then doing "Add" -> "Existing Folder...". Select the "Resources" directory in the file picker.
 
-![](/img/general-development/setup/setting-up-a-development-environment/rider-attach-folder-1.png)
-![](/img/general-development/setup/setting-up-a-development-environment/rider-attach-folder-2.png)
+![](/img/docs/setup/ide/rider-attach-folder-1.png)
+![](/img/docs/setup/ide/rider-attach-folder-2.png)
 
 After this, your solution view should look something like this, and you should be able to easily access the `Resources` folder:
 
-![](/img/general-development/setup/setting-up-a-development-environment/rider-attach-folder-3.png)
+![](/img/docs/setup/ide/rider-attach-folder-3.png)
 
 ### Visual Studio Code
 

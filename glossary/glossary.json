@@ -266,15 +266,15 @@
     },
     {
       "term": "VS",
-      "definition": "Visual Studio Community 2017/19. Not the same as VSC. The IDE for people who can't get a Rider license.",
+      "definition": "Visual Studio Community 2017/19. Not the same as VSCode. The IDE for people who can't get a Rider license.",
       "abbreviation": "Visual Studio Community",
+      "aliases": ["VSC"],
       "caseSensitive": true
     },
     {
       "term": "VSCode",
-      "definition": "Visual Studio Code. Not the same as VS.",
+      "definition": "Visual Studio Code. Not the same as VSC.",
       "abbreviation": "Visual Studio Code",
-      "aliases": ["VSC"],
       "caseSensitive": true
     },
     {

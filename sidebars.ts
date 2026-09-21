@@ -32,6 +32,7 @@ const sidebars: SidebarsConfig = {
           ]
         },
         'setup/getting-started/ide',
+        'setup/getting-started/localhost',
       ]
     },
   ],
