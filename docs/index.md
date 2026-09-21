@@ -25,6 +25,4 @@ This wiki is written in [Markdown](https://docs.requarks.io/en/editors/markdown)
 ## Want to contribute to these docs?
 If you would like to make contributions to this documentation site, it's hosted fully open source on GitHub and you can make a webedit PR to any page by clicking the 'Edit this page' button at the footer. You can also click the GitHub button in the top-right corner to visit the GitHub repository.
 
-import DocCardList from '@theme/DocCardList';
-
 <DocCardList/>

@@ -3,6 +3,8 @@ sidebar_position: 3
 ---
 # Merge Conflicts
 
+<WipHeader/>
+
 *WIP i'll write a better guide for this later because it's important*
 
 A nasty little maintainer has told you to 'resolve conflicts' or your PR 'wont be merged'. What an asshole! Thankfully, it's not too hard.

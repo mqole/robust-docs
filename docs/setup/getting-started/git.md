@@ -27,8 +27,6 @@ Here are some more resources for learning about Git:
 - [Oh shit, Git?!](https://ohshitgit.com/), a list of solutions to common git problems. This one will come in handy.
 - [Learn Git Branching](https://learngitbranching.js.org/). This one is interactive, and very in-depth, but you **will have learned Git by the end of it**. Recommended for intermediate Git users.
 
-import DocCardList from '@theme/DocCardList';
-
 <DocCardList/>
 
 ![xkcd: 'git'](https://imgs.xkcd.com/comics/git.png)

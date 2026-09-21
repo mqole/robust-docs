@@ -1,8 +1,6 @@
 # Setting Up an IDE
 
-:::danger
-still working on this one, check back later
-:::
+<WipHeader/>
 
 (WHAT IDE MEANS)
 

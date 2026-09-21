@@ -60,11 +60,53 @@ Here are the different types you can use:
 :::danger
 :::
 
+## Custom Components
+
+Docusaurus compiles all `.md` pages as `.mdx` at runtime, allowing users to [render their own components using React](https://mdxjs.com/). For example, defining a custom `WipHeader` component in `src/components/wipHeader.js`:
+
+```js
+import React from 'react';
+import Admonition from '@theme/Admonition';
+
+export default function WipHeader(){
+  return(
+    <div>
+      <Admonition type="info" title="Work in Progress">
+        <p>This page is a work in progress. Information present here may be incomplete or outdated.</p>
+      </Admonition>
+    </div>
+  );
+};
+```
+
+Allows dynamic use of the component with `<WipHeader/>`:
+
+<WipHeader/>
+
+You will need to `import` your custom components if you wish to use them in a file, like so:
+
+```
+Some text here...
+
+import WipHeader from '@site/src/components/wipHeader'
+<WipHeader/>
+
+Some more text...
+```
+
+If you intend to use your component across multiple files, consider instead [adding it to the global scope](https://docusaurus.io/docs/markdown-features/react#mdx-component-scope) at `src/theme/MDXComponents.js`. This will allow you to use a component without requiring it to be imported.
+
 ## KaTex
 
 You can use [KaTeX](https://katex.org/) to write math equations.
 
-Block KaTeX can be written by wrapping your LaTeX equations in a `math` block:
+Block KaTeX can be written by wrapping your LaTeX equations in a `math` block.
+
+``````
+```math
+mu = \frac{1}{N} \sum_{i=0} x_i
+```
+``````
 
 ```math
 mu = \frac{1}{N} \sum_{i=0} x_i
@@ -72,7 +114,9 @@ mu = \frac{1}{N} \sum_{i=0} x_i
 
 Inline KaTeX can be written by wrapping your LaTeX equations in `$`.
 
-```Silly Atmospherics maintainer, the derivation is written in $\KaTeX$, so it must be true!```
+```
+Silly Atmospherics maintainer, the derivation is written in $\KaTeX$, so it must be true!
+```
 
 Silly Atmospherics maintainer, the derivation is written in $\KaTeX$, so it must be true!
 

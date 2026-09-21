@@ -6,8 +6,6 @@ authors: [mqole]
 tags: [site]
 hide_table_of_contents: false
 ---
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 Trying to convert the syntax of mdbook into something that's nice on [Docusaurus](https://docusaurus.io/) is annoying, so I wrote some basic Python scripts to do it for me.
 
@@ -39,12 +37,6 @@ You're using tabs right now!!!
 <hr/>
 
 ^ *(Oh, look, a horizontal rule! How did that get there?)*
-
-Also of note, a Docusaurus page that uses tabs has to be in the `.mdx` format, not `.md`. The file also needs to include the following header imports:
-```
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-```
 
 I did consider writing a script to automatically convert image paths, but I have plans to tidy up the directories for images anyway, so I'm sticking to doing that one manually for the time being.
 

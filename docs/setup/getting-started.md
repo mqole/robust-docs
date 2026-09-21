@@ -12,6 +12,4 @@ If you don't have any project ideas but still want to learn, try looking at the 
 If you are interested in contributing to WizDen, make sure you read through their [Freezes & Restrictions](https://github.com/space-wizards/space-station-14/issues/8524) issue to ensure your idea does not fall into the list of freezes. Different downstreams may have their own similar lists of feature freezes or prerequisites.
 :::
 
-import DocCardList from '@theme/DocCardList';
-
 <DocCardList/>
