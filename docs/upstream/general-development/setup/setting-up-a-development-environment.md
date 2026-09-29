@@ -154,8 +154,8 @@ There's also definitely some way to run two commands at the same time, but you s
 To run or debug test builds in Rider more easily, you can create a [compound configuration](https://www.jetbrains.com/help/rider/Run_Debug_Multiple.html#compound-configs) which runs the client and server at the same time. Quite convenient!
 The project may already include a configuration you can choose from the dropdown at the top, but if it has a red symbol, it wasn't set up properly and you need to create it manually, or it hasn't loaded yet. Once done, press Shift+F10 or click the play button to run it. That's it!
 
-![](/img/general-development/setup/setting-up-a-development-environment/rider-configurations-1.jpg)
-![](/img/general-development/setup/setting-up-a-development-environment/rider-configurations-2.jpg)
+![](/img/docs/setup/ide//rider-configurations-1.jpg)
+![](/img/docs/setup/ide//rider-configurations-2.jpg)
 
 ## 6. Configuring IDE directories
 

@@ -49,6 +49,8 @@ winget install VSCodium.VSCodium (VSCodium)
    
 6. You can now select what you want to run (Server, Client, or both) using the dropdown button in the top right, then press the play button to compile and run it.
 
+#### Resources
+
 C# IDEs like Rider don't automatically show the `Resources` folder in the project. This folder contains all non-C# files such as sprites, audio, and most importantly, YAML prototypes. You'll need to follow a few extra steps to be able to see these.
 
 In Rider, you can "attach" the resources directory to the solution. Do this by right clicking the solution in the explorer, then clicking `Add` -> `Existing Folder...`. Select the `Resources` directory in the file picker.
@@ -59,6 +61,15 @@ In Rider, you can "attach" the resources directory to the solution. Do this by r
 After this, your solution view should look something like this, and you should be able to easily access the `Resources` folder.
 
 ![](/img/docs/setup/ide/rider-attach-folder-3.png)
+
+:::tip[Creating a new Build Configuration in Rider]
+To run or debug test builds in Rider more easily, you can create a [compound configuration](https://www.jetbrains.com/help/rider/Run_Debug_Multiple.html#compound-configs) which runs the client and server at the same time.
+
+The project may already include a configuration you can choose from the dropdown at the top, but if it has a red symbol, it wasn't set up properly and you need to create it manually, or it hasn't loaded yet. Once done, press Shift+F10 or click the play button to run it. That's it!
+
+![](/img/docs/setup/ide/rider-configurations-1.jpg)
+![](/img/docs/setup/ide/rider-configurations-2.jpg)
+:::
 
 ### VSCode
 
@@ -71,6 +82,10 @@ After this, your solution view should look something like this, and you should b
 4. When asked to open a solution, select `SpaceStation14.slnx`. Alternatively, set `dotnet.defaultSolution` setting to `SpaceStation14.slnx` in your workspace settings.
    
 5. Now you can run and debug your game. Select the icon above "Extensions" from earlier for "Run and Debug" and from the dropdown next to the green play button you can select "Server/Client". This will run both the client and server, opening the game for you to debug. Relevant information will pop up in the debug along the bottom. Select the processes in the call stack on the left to change what you are debugging.
+
+:::tip[Creating a new Build Configuration in VSCode]
+The C# Dev Kit extension provides a `"coreclr"` launch type which can be used to run the `Content.Server` and `Content.Client` executables in their respective `bin/` directories. A [compound launch configuration](https://code.visualstudio.com/Docs/editor/debugging#_compound-launch-configurations) can be used to run the server and client at the same time.
+:::
    
 ### VSCodium
 1. Download [VSCodium Here](https://vscodium.com/) or more directly [on Github Here](https://github.com/VSCodium/vscodium/releases) (On the latest release, click the assets dropdown then scroll to the ZIP or .exe for your OS).
