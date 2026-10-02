@@ -14,7 +14,7 @@ There are several options available to you if you haven't yet downloaded an IDE,
   * For **all platforms**, [Visual Studio Code](https://code.visualstudio.com/) (VSCode) is a nice minimalist IDE by Microsoft which has a lot of great user-made plugins available. Don't get it confused with VSC (Visual Studio Community), which is a lot bulkier.
   * For **all platforms**, [VSCodium](https://vscodium.com/) is an open source version of VSCode without the AI bloat and tracking.
 
-:::tip[VSCode and VSCodium extension]
+::::::tip[VSCode and VSCodium extension]
 If using one of these IDEs, you'll want to install the requisite extensions to enable support for any additional coding languages used by your project. RT and SS14 are mostly coded in C#, so you'll want to make sure you've installed Microsoft's official [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) extension.
 
 :::warning[VSCodium and SLNX]
@@ -22,7 +22,7 @@ Currently VSCodium seemingly does [not support SLNX](https://github.com/muhammad
 :::
 
 **Exclusive to VSCode and VSCodium**, you also can install our community made [Robust YAML](https://marketplace.visualstudio.com/items?itemName=slava0135.robust-yaml) extension for better Robust Toolbox YAML experience on top of the [YAML Language Support](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) extension.
-:::
+::::::
 
 
 ## Setup
