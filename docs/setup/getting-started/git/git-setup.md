@@ -53,7 +53,7 @@ Navigate to the [Space Station 14 repository](https://github.com/space-wizards/s
 From there, it'll ask you where to fork it and what to name it--just to your regular account, and name it whatever you please! (but you'll probably want to stick with the default name.)
 
 :::info
-GitHub doesn't let you create multiple forks of a single project, so if you're working on multiple downstreams, or a downstream and an upstream simultaneously, you'll need to make a new repository and/or configure your local [remotes](#3-setting-up-local-remotes) to point to the desired upstream.
+GitHub doesn't let you create multiple forks of a single project, so if you're working on multiple downstreams, or a downstream and an upstream simultaneously, you'll need to make a new repository and/or configure your local [remotes](#remotes) to point to the desired upstream.
 :::
 
 ### Local Repository
@@ -67,7 +67,7 @@ You need to use the `git` in some shape or form (Command line or a Graphical int
 The "Download zip" option on GitHub will NOT work since it does not contain the submodules required (aka the game engine, Robust Toolbox) and also does not contain previous history, which means it would be impossible to even make a commit without it present.
 :::
 
-Navigate to somewhere on your computer where you want to put the local repository, and right click:
+Navigate to somewhere on your computer where you want to put the local repository, and right click to open a command line program (eg. Git Bash, Terminal, Powershell). On some devices, you may need to hold Shift and right click to see this prompt.
 
 ![gbclone.png](/img/docs/setup/git/gbclone.png)
 

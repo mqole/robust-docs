@@ -17,11 +17,11 @@ There are several options available to you if you haven't yet downloaded an IDE,
 :::tip[VSCode and VSCodium extension]
 If using one of these IDEs, you'll want to install the requisite extensions to enable support for any additional coding languages used by your project. RT and SS14 are mostly coded in C#, so you'll want to make sure you've installed Microsoft's official [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) extension.
 
-**Exclusive to VSCode and VSCodium**, you also can install our community made [Robust YAML](https://marketplace.visualstudio.com/items?itemName=slava0135.robust-yaml) extension for better Robust Toolbox YAML experience on top of the [YAML Language Support](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) extension.
+:::warning[VSCodium and SLNX]
+Currently VSCodium seemingly does [not support SLNX](https://github.com/muhammadsammy/free-vscode-csharp/issues/95). You can get around this by using the [Resharper](https://open-vsx.org/extension/JetBrains/resharper-code) plugin in place of the official [C#](https://open-vsx.org/extension/muhammad-sammy/csharp) extension.
 :::
 
-:::warning[VSCodium and SLNX]
-Currently VSCodium seemingly does [not support SLNX](https://github.com/muhammadsammy/free-vscode-csharp/issues/95), although you may be able to get around this by using the [Resharper](https://open-vsx.org/extension/JetBrains/resharper-code) plugin in place of C# Dev Kit.
+**Exclusive to VSCode and VSCodium**, you also can install our community made [Robust YAML](https://marketplace.visualstudio.com/items?itemName=slava0135.robust-yaml) extension for better Robust Toolbox YAML experience on top of the [YAML Language Support](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) extension.
 :::
 
 
@@ -29,11 +29,36 @@ Currently VSCodium seemingly does [not support SLNX](https://github.com/muhammad
 
 :::tip[Windows and Winget]
 Windows users may prefer to use Winget for an easier install. Just open Command Line and enter one of the following:
+
+<Tabs>
+<TabItem value='Rider'>
+For the full toolbox:
+
+```bash
+winget install JetBrains.Toolbox
 ```
-winget install JetBrains.Toolbox (or 'JetBrains.Rider' if you don't want the whole toolbox app)
-winget install Microsoft.VisualStudioCode (Visual Studio Code)
-winget install VSCodium.VSCodium (VSCodium)
+
+For just the app:
+
+```bash
+winget install JetBrains.Rider
 ```
+
+</TabItem>
+<TabItem value='Visual Studio Code'>
+
+```bash
+winget install Microsoft.VisualStudioCode
+```
+
+</TabItem>
+<TabItem value='VSCodium'>
+
+```bash
+winget install VSCodium.VSCodium
+```
+</TabItem>
+</Tabs>
 :::
 
 ### JetBrains Rider
@@ -79,7 +104,7 @@ The project may already include a configuration you can choose from the dropdown
    
 3. Navigate to the Extensions tab (part way down on the top left corner bar, looks like 4 tiles) and install the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) extension. (And pick up [YAML Language Support](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) and [Robust YAML](https://marketplace.visualstudio.com/items?itemName=slava0135.robust-yaml) while you're here!)
    
-4. When asked to open a solution, select `SpaceStation14.slnx`. Alternatively, set `dotnet.defaultSolution` setting to `SpaceStation14.slnx` in your workspace settings.
+4. Using the Command Palette (CTRL + Shift + P), type in and select `Solution Explorer: Open Solution`. In the file prompt, navigate to the root folder of your repository and select `SpaceStation14.slnx`. (Alternatively, set `dotnet.defaultSolution` setting to `SpaceStation14.slnx` in your workspace settings.)
    
 5. Now you can run and debug your game. Select the icon above "Extensions" from earlier for "Run and Debug" and from the dropdown next to the green play button you can select "Server/Client". This will run both the client and server, opening the game for you to debug. Relevant information will pop up in the debug along the bottom. Select the processes in the call stack on the left to change what you are debugging.
 
@@ -94,9 +119,9 @@ The C# Dev Kit extension provides a `"coreclr"` launch type which can be used to
    
 3. Once installed, click `Open Folder`, then navigate to your repository and open this full folder.
    
-4. Navigate to the Extensions tab (part way down on the top left corner bar, looks like 4 tiles) and install the [C#](https://open-vsx.org/extension/muhammad-sammy/csharp) extension.
+4. Navigate to the Extensions tab (part way down on the top left corner bar, looks like 4 tiles) and install the [Resharper](https://open-vsx.org/extension/JetBrains/resharper-code) extension.
    
-5. When asked to open a solution, select `SpaceStation14.slnx`. Alternatively, set `dotnet.defaultSolution` setting to `SpaceStation14.slnx` in your workspace settings.
+5. Using the Command Palette (CTRL + Shift + P), type in and select `Solution Explorer: Open Solution`. In the file prompt, navigate to the root folder of your repository and select `SpaceStation14.slnx`. (Alternatively, set `dotnet.defaultSolution` setting to `SpaceStation14.slnx` in your workspace settings.)
    
 6. Now you can run and debug your game. Select the icon above "Extensions" from earlier for "Run and Debug" and from the dropdown next to the green play button you can select "Server/Client". This will run both the client and server, opening the game for you to debug. Relevant information will pop up in the debug along the bottom. Select the processes in the call stack on the left to change what you are debugging.
 
