@@ -29,7 +29,7 @@ To compile without an IDE, run `dotnet build` in the Command Line in the root fo
 
 Both these commands use the Debug configuration by default. To enable release optimizations, add `--configuration Release` to the end of the dotnet invocation.
 
-You can learn more about the difference between `Content.Server` and `Content.Client` in the [Codebase Organization](../codebase/codebase-organization.md) guide.
+You can learn more about the difference between `Content.Server` and `Content.Client` in the [Codebase Organization](../codebase/organization.md) guide.
 
 :::note[If using OpenSSL]
 If you're having problems with .NET not finding libssl, try setting the `CLR_OPENSSL_VERSION_OVERRIDE` environment variable to the appropriate version. For instance, set it to `48` if your `/usr/lib` contains `libssl.so.48`.
